@@ -20,14 +20,14 @@ public class Move : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             RaycastHit hit;
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            Ray ray = GameManager.singleton.cameraManager.RaycastToMousePosition();
             Debug.DrawRay(ray.origin, ray.direction * 50000000, Color.red);
             if (Physics.Raycast(ray, out hit))
             {
                 if (hit.transform.tag == "Ground")
                 {
                     Vector3 objectHit = new Vector3(hit.point.x, hit.transform.position.y + playerHeight, hit.point.z);
-                    transform.position = objectHit; // todoo make a class for camera raycast
+                    transform.position = objectHit;
                 }
             }
         }
