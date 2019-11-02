@@ -24,10 +24,8 @@ public class Laser : MonoBehaviour
         if (Physics.Raycast(fromPosition, direction, out hit))
         {
             if(hit.transform.name== "Obstacle")
-            {
-               
+            {      
                 lr.SetColors(Color.red, Color.red);
-                Debug.Log(hit.transform.name);
             }
 
         }
