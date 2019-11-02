@@ -21,7 +21,7 @@ public class GameManager : MonoBehaviour
 
 
     // Declare all your service here
-    //[HideInInspector] public LevelManager levelManager;
+    [HideInInspector] public CameraManager cameraManager;
     public void Awake()
     {
         if (singleton == null)
@@ -43,7 +43,7 @@ public class GameManager : MonoBehaviour
         try
         {
             // define your services here
-            //levelManager = new LevelManager("Level");
+            cameraManager = new CameraManager("Main Camera");
             DontDestroyOnLoad(this.gameObject);
         }
         catch (Exception e)
@@ -147,7 +147,7 @@ public class GameManager : MonoBehaviour
 
     private void DestroyAllManagers()
     {
-
+        cameraManager = null;
     }
     private void DestroyAllClients()
     {
