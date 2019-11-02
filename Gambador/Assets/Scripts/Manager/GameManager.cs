@@ -1,18 +1,161 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using System;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [HideInInspector] public static GameManager singleton;
+    [HideInInspector] public Dictionary<string, IEnumerator> coroutines;
+    [HideInInspector] public delegate void GameEventManager();
+    [HideInInspector] public static event GameEventManager SystemOnInit;
+
+    [HideInInspector] public static event GameEventManager ApplicationOnQuit;
+    [HideInInspector] public static event GameEventManager ApplicationOnPause;
+    [HideInInspector] public static event GameEventManager ApplicationOnFocus;
+
+    [HideInInspector] public static event GameEventManager GameUpdate;
+    [HideInInspector] public static event GameEventManager GameFixedUpdate;
+
+
+    // Declare all your service here
+    //[HideInInspector] public LevelManager levelManager;
+    public void Awake()
+    {
+        if (singleton == null)
+        {
+            singleton = this;
+            Debug.Log("singleton:" + singleton.ToString() + " is created");
+        }
+        else if (singleton != null && singleton != this)
+        {
+            Debug.LogWarning("singleton:" + singleton.ToString());
+            Debug.LogWarning("GameManager Gameobject, OnAwake : Singleton already assigned. Need to destroy this gameobject.");
+            Destroy(this);
+            return;
+        }
+        StartGameManager();
+    }
+    private void StartGameManager()
+    {
+        try
+        {
+            // define your services here
+            //levelManager = new LevelManager("Level");
+            DontDestroyOnLoad(this.gameObject);
+        }
+        catch (Exception e)
+        {
+            Debug.LogException(e);
+        }
+
+    }
+    public void OnDisable()
+    {
+
+        //TODO : disable other game event
+    }
+
+    public void InitUnitySystem()
+    {
+        if (SystemOnInit != null)
+        {
+            Debug.Log(" GAME MANAGER INIT UNITY SYSTEM");
+            SystemOnInit();
+        }
+    }
+
+    private void Update()
+    {
+        if (GameUpdate != null)
+            GameUpdate();
+    }
+
+    private void OnMouseDown()
     {
         
     }
 
-    // Update is called once per frame
-    void Update()
+    private void FixedUpdate()
     {
-        
+        if (GameFixedUpdate != null)
+            GameFixedUpdate();
+    }
+    public void StartCouroutineInGameManager(IEnumerator routine, string routineName)
+    {
+        if (coroutines == null)
+        {
+            coroutines = new Dictionary<string, IEnumerator>();
+        }
+        if (coroutines != null && !coroutines.ContainsKey(routineName))
+        {
+            Coroutine co = StartCoroutine(routine);
+            coroutines.Add(routineName, routine);
+        }
+        else if (coroutines != null && coroutines.ContainsKey(routineName))
+        {
+            StopCouroutineInGameManager(routineName);
+            Coroutine l_co = StartCoroutine(routine);
+            coroutines.Add(routineName, routine);
+        }
+    }
+    public void StartCouroutineInGameManager(IEnumerator routine)//Coroutine avec arret automatique du MonoBehavior
+    {
+        StartCoroutine(routine);
+    }
+    public void StopCouroutineInGameManager(string coroutineName)
+    {
+        if (coroutines.ContainsKey(coroutineName))
+        {
+            StopCoroutine(coroutines[coroutineName]);
+            coroutines.Remove(coroutineName);
+        }
+    }
+
+    void OnApplicationQuit()
+    {
+        if (ApplicationOnQuit != null)
+            ApplicationOnQuit();
+    }
+
+    private void OnApplicationFocus(bool focus)
+    {
+        if (focus)
+        {
+            if (ApplicationOnFocus != null)
+                ApplicationOnFocus();
+        }
+        else
+        {
+            Debug.Log("Unfocus");
+            if (ApplicationOnPause != null)
+                ApplicationOnPause();
+        }
+    }
+
+
+    public void DestroyServices()
+    {
+        StopAllCoroutines();
+        DestroyAllManagers();
+        DestroyAllClients();
+        DestroyAllListeners();
+        coroutines = null;
+    }
+
+    private void DestroyAllManagers()
+    {
+
+    }
+    private void DestroyAllClients()
+    {
+
+    }
+
+    private void DestroyAllListeners()
+    {
+
     }
 }
