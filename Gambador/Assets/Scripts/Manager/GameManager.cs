@@ -21,7 +21,8 @@ public class GameManager : MonoBehaviour
 
 
     // Declare all your service here
-    [HideInInspector] public CameraManager cameraManager;
+    [HideInInspector] public CameraManager CameraManager { get; set; }
+    [HideInInspector] public RaycastManager RaycastManager { get; set; }
     public void Awake()
     {
         if (singleton == null)
@@ -43,7 +44,8 @@ public class GameManager : MonoBehaviour
         try
         {
             // define your services here
-            cameraManager = new CameraManager("Main Camera");
+            CameraManager = new CameraManager("Main Camera");
+            RaycastManager = new RaycastManager();
             DontDestroyOnLoad(this.gameObject);
         }
         catch (Exception e)
@@ -147,7 +149,9 @@ public class GameManager : MonoBehaviour
 
     private void DestroyAllManagers()
     {
-        cameraManager = null;
+        CameraManager = null;
+        RaycastManager = null;
+
     }
     private void DestroyAllClients()
     {

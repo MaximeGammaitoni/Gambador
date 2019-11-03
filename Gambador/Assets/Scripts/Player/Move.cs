@@ -4,33 +4,22 @@ using UnityEngine;
 
 public class Move : MonoBehaviour
 {
-
+    private RaycastManager raycastManager;
+    private LineRenderer lr;
     private float playerHeight;
     private float playerWidth;
     // Start is called before the first frame update
     void Start()
     {
-       
+        raycastManager = GameManager.singleton.RaycastManager;
+        lr = gameObject.transform.Find("Laser").GetComponent<LineRenderer>();
         playerHeight = gameObject.GetComponent<MeshRenderer>().bounds.size.y;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
-        {
-            RaycastHit hit;
-            Ray ray = GameManager.singleton.cameraManager.RaycastToMousePosition();
-            Debug.DrawRay(ray.origin, ray.direction * 50000000, Color.red);
-            if (Physics.Raycast(ray, out hit))
-            {
-                if (hit.transform.tag == "Ground")
-                {
-                    Vector3 objectHit = new Vector3(hit.point.x, hit.transform.position.y + playerHeight, hit.point.z);
-                    transform.position = objectHit;
-                }
-            }
-        }
+        raycastManager.MovingRaycastWithLineRenderer(transform, lr, playerHeight);
 
     }
 
