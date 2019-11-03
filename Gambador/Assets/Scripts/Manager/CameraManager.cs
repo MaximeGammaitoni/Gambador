@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityStandardAssets._2D;
 
 public class CameraManager : BaseGameObjectManager
 {
@@ -17,10 +18,14 @@ public class CameraManager : BaseGameObjectManager
         Ray ray = mainGameObject.GetComponent<Camera>().ScreenPointToRay(Input.mousePosition);
         return ray;
     }
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
     
+    public void ChangeTargetCamera(Transform target)
+    {
+        mainGameObject.GetComponent<Camera2DFollow>().target = target;
+    }
+
+    public Transform GetTargetCamera()
+    {
+        return mainGameObject.GetComponent<Camera2DFollow>().target;
+    }
 }
