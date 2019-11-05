@@ -543,7 +543,7 @@ Projector:
   m_FieldOfView: 63.09
   m_AspectRatio: 1
   m_Orthographic: 1
-  m_OrthographicSize: 15.45
+  m_OrthographicSize: 7.45
   m_Material: {fileID: 2100000, guid: d4266cd2f5eccf649863eb76fc304bd3, type: 2}
   m_IgnoreLayers:
     serializedVersion: 2

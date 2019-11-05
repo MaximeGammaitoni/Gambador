@@ -50,7 +50,7 @@ public class RaycastManager
         Vector3 fromPosition2D = new Vector3(fromPosition.x, 0, fromPosition.z);
         float distance2D = Vector3.Distance(toPosition2D, fromPosition2D);
         float distance = Vector3.Distance(toPosition, fromPosition);
-        float radius = 15.45f;
+        float radius = 7f;
         if (distance2D > radius) //If the distance is less than the radius, it is already within the circle.
         {
             Vector3 fromOriginToObject = toPosition - fromPosition; //~GreenPosition~ - *BlackCenter*
