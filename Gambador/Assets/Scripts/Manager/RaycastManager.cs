@@ -11,6 +11,7 @@ public class RaycastManager
     private LineRenderer lr;
     private float playerHeight;
     private float lastYFromPos;
+    private bool block;
     public RaycastManager()
     {
         WalkablesTags = new List<string>();
@@ -58,7 +59,21 @@ public class RaycastManager
             mousePos = fromPosition + fromOriginToObject; //*BlackCenter* + all that Math
             Debug.DrawRay(new Vector3(mousePos.x, mousePos.y + 2.5f, mousePos.z), Vector3.down, Color.red);
             if (Physics.Raycast(new Vector3(mousePos.x, mousePos.y + 2.5f, mousePos.z), Vector3.down, out hit, 1000))
+            {
                 mousePos.y = hit.transform.position.y + playerHeight;
+                block = false;
+                lr.startColor = Color.green;
+                lr.endColor = Color.green;
+            }
+            else
+            {
+                block = true;
+
+            }
+        }
+        else
+        {
+            block = false;
         }
 
         lr.SetPosition(0, player.transform.position);
@@ -72,11 +87,20 @@ public class RaycastManager
             }
             else
             {
-                if (Input.GetMouseButtonDown(0)) // not an obstacle in trajectory, player can move
+                if (!block)
                 {
-                    Vector3 objectHit = new Vector3(mousePos.x, mousePos.y, mousePos.z);
-                    GameManager.singleton.MovingPlayerManager.StartMovingPlayer(objectHit);
+                    if (Input.GetMouseButtonDown(0)) // not an obstacle in trajectory, player can move
+                    {
+                        Vector3 objectHit = new Vector3(mousePos.x, mousePos.y, mousePos.z);
+                        GameManager.singleton.MovingPlayerManager.StartMovingPlayer(objectHit);
+                    }
                 }
+                else
+                {
+                    lr.startColor = Color.red;
+                    lr.endColor = Color.red;
+                }
+
             }
         }
         else
@@ -84,10 +108,18 @@ public class RaycastManager
             lr.startColor = Color.green;
             lr.endColor = Color.green;
 
-            if (Input.GetMouseButtonDown(0)) // not an obstacle in trajectory, player can move
+            if (!block)
             {
-                Vector3 objectHit = new Vector3(mousePos.x, mousePos.y, mousePos.z);
-                GameManager.singleton.MovingPlayerManager.StartMovingPlayer(objectHit);
+                if (Input.GetMouseButtonDown(0)) // not an obstacle in trajectory, player can move
+                {
+                    Vector3 objectHit = new Vector3(mousePos.x, mousePos.y, mousePos.z);
+                    GameManager.singleton.MovingPlayerManager.StartMovingPlayer(objectHit);
+                }
+            }
+            else
+            {
+                lr.startColor = Color.red;
+                lr.endColor = Color.red;
             }
         }
     }
