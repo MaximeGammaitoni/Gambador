@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
     [HideInInspector] public static GameManager singleton;
     [HideInInspector] public Dictionary<string, IEnumerator> coroutines;
     [HideInInspector] public delegate void GameEventManager();
+    [HideInInspector] public delegate void PlayerMovingManager();
     [HideInInspector] public static event GameEventManager SystemOnInit;
 
     [HideInInspector] public static event GameEventManager ApplicationOnQuit;
@@ -18,6 +19,8 @@ public class GameManager : MonoBehaviour
 
     [HideInInspector] public static event GameEventManager GameUpdate;
     [HideInInspector] public static event GameEventManager GameFixedUpdate;
+    [HideInInspector] public static event PlayerMovingManager PlayerMovingStart;
+    [HideInInspector] public static event PlayerMovingManager PlayerMovingStop;
 
 
     // Declare all your service here
@@ -76,6 +79,10 @@ public class GameManager : MonoBehaviour
     {
         if (GameUpdate != null)
             GameUpdate();
+        if (PlayerMovingStart != null)
+            PlayerMovingStart();
+        if (PlayerMovingStart != null)
+            PlayerMovingStop();
     }
 
     private void OnMouseDown()
