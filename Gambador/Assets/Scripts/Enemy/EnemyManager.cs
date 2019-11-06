@@ -6,9 +6,10 @@ public class EnemyManager : MonoBehaviour
 {
     [HideInInspector] public delegate void EnemyEventManager();
     [HideInInspector] public static event EnemyEventManager EnemyDeathEvent;
-    [HideInInspector] public static event EnemyEventManager AlterPropertiesEvent;
+    [HideInInspector] public static event EnemyEventManager PopEvent;
 
     private Properties properties;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -22,17 +23,21 @@ public class EnemyManager : MonoBehaviour
             EnemyDeath();
     }
 
+    void OnEnable()
+    {
+        OnPop();
+    }
+
+    private void OnPop()
+    {
+        Debug.Log("I'm pop" + this.name);
+        PopEvent?.Invoke();
+    }
+
     private void EnemyDeath()
     {
         Debug.Log(this.name + "is dead");
         EnemyDeathEvent?.Invoke();
-    }
-
-    public void AlterProperties()
-    {
-        Debug.Log("Change properties");
-        AlterPropertiesEvent?.Invoke();
-
     }
 
 }
