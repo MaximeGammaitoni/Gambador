@@ -18,8 +18,9 @@ public class Attack : MonoBehaviour
     void Update()
     {
         if (Input.GetMouseButtonDown(1))
-        {
-            damage.MakeCircular(properties.damage);
+        { 
+            if(damage && properties)
+                damage.MakeCircular(properties.damage);
         }
     }
 }
