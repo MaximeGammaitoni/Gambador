@@ -24,6 +24,8 @@ public class GameManager : MonoBehaviour
     [HideInInspector] public CameraManager CameraManager { get; set; }
     [HideInInspector] public RaycastManager RaycastManager { get; set; }
     [HideInInspector] public MovingPlayerManager MovingPlayerManager { get; set; }
+    [HideInInspector] public RangeManager RangeManager { get; set; }
+
     public void Awake()
     {
         if (singleton == null)
@@ -46,9 +48,10 @@ public class GameManager : MonoBehaviour
         {
             // define your services here
             CameraManager = new CameraManager("Main Camera");
+            RangeManager = new RangeManager();
             RaycastManager = new RaycastManager();
             MovingPlayerManager = new MovingPlayerManager("Player");
-
+            
             DontDestroyOnLoad(this.gameObject);
         }
         catch (Exception e)
@@ -76,6 +79,7 @@ public class GameManager : MonoBehaviour
     {
         if (GameUpdate != null)
             GameUpdate();
+
     }
 
     private void OnMouseDown()
