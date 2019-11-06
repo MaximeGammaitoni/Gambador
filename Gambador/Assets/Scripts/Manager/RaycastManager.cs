@@ -12,6 +12,7 @@ public class RaycastManager
     private float playerHeight;
     private float lastYFromPos;
     private bool block;
+    private RangeManager rangeManager;
     public RaycastManager()
     {
         WalkablesTags = new List<string>();
@@ -22,6 +23,8 @@ public class RaycastManager
         lr = player.transform.Find("Laser").GetComponent<LineRenderer>();
         playerHeight = player.GetComponent<MeshRenderer>().bounds.size.y;
         GameManager.GameUpdate += MovingRaycastWithLineRenderer;
+
+        rangeManager = GameManager.singleton.RangeManager;
 
     }
     public Vector3 GetMousePosition(Vector3 initialPosition)
@@ -51,7 +54,8 @@ public class RaycastManager
         Vector3 fromPosition2D = new Vector3(fromPosition.x, 0, fromPosition.z);
         float distance2D = Vector3.Distance(toPosition2D, fromPosition2D);
         float distance = Vector3.Distance(toPosition, fromPosition);
-        float radius = 7f;
+        float radius = rangeManager.RangeRadius;
+        Debug.Log(rangeManager.RangeRadius);
         if (distance2D > radius) //If the distance is less than the radius, it is already within the circle.
         {
             Vector3 fromOriginToObject = toPosition - fromPosition; //~GreenPosition~ - *BlackCenter*
@@ -92,6 +96,7 @@ public class RaycastManager
                     if (Input.GetMouseButtonDown(0)) // not an obstacle in trajectory, player can move
                     {
                         Vector3 objectHit = new Vector3(mousePos.x, mousePos.y, mousePos.z);
+                        GameManager.singleton.RangeManager.UpdateRangeSmoothly(Config.RangeIncrementBy);
                         GameManager.singleton.MovingPlayerManager.StartMovingPlayer(objectHit);
                     }
                 }
@@ -100,7 +105,6 @@ public class RaycastManager
                     lr.startColor = Color.red;
                     lr.endColor = Color.red;
                 }
-
             }
         }
         else
@@ -113,6 +117,7 @@ public class RaycastManager
                 if (Input.GetMouseButtonDown(0)) // not an obstacle in trajectory, player can move
                 {
                     Vector3 objectHit = new Vector3(mousePos.x, mousePos.y, mousePos.z);
+                    GameManager.singleton.RangeManager.UpdateRangeSmoothly(Config.RangeIncrementBy);
                     GameManager.singleton.MovingPlayerManager.StartMovingPlayer(objectHit);
                 }
             }

@@ -9,7 +9,7 @@ public class MovingPlayerManager : BaseGameObjectManager
     private Rigidbody playerRigidBody;
     private ParticleSystem particleSystem;
     private GameObject laser;
-    private float speed = 40;
+    private float speed;
     private bool canMove = true;
 
     [HideInInspector] public delegate void PlayerMovingEventManager();
@@ -19,6 +19,7 @@ public class MovingPlayerManager : BaseGameObjectManager
 
     public MovingPlayerManager(string gameObjectName) : base(gameObjectName)
     {
+        speed = Config.PlayerSpeed;
         playerMesh = mainGameObject.GetComponent<MeshRenderer>();
         playerCollider = mainGameObject.GetComponent<BoxCollider>();
         playerRigidBody = mainGameObject.GetComponent<Rigidbody>();
