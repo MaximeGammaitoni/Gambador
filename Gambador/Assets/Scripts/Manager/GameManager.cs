@@ -24,6 +24,7 @@ public class GameManager : MonoBehaviour
     [HideInInspector] public CameraManager CameraManager { get; set; }
     [HideInInspector] public RaycastManager RaycastManager { get; set; }
     [HideInInspector] public MovingPlayerManager MovingPlayerManager { get; set; }
+
     public void Awake()
     {
         if (singleton == null)
@@ -76,6 +77,7 @@ public class GameManager : MonoBehaviour
     {
         if (GameUpdate != null)
             GameUpdate();
+
     }
 
     private void OnMouseDown()
