@@ -19,8 +19,6 @@ public class EnemyManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (properties.hp <= 0)
-            EnemyDeath();
     }
 
     void OnEnable()
@@ -34,7 +32,7 @@ public class EnemyManager : MonoBehaviour
         PopEvent?.Invoke();
     }
 
-    private void EnemyDeath()
+    public void EnemyDeath()
     {
         Debug.Log(this.name + "is dead");
         EnemyDeathEvent?.Invoke();

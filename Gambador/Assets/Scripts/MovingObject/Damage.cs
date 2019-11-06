@@ -5,7 +5,7 @@ using UnityEngine;
 public class Damage : MonoBehaviour
 {
     private Properties properties;
-
+    private EnemyManager enemyManager;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,7 +22,9 @@ public class Damage : MonoBehaviour
         if (properties.hp > 0)
         {
             properties.hp -= damage;
-        }
+        }else{
+            enemyManager.EnemyDeath();
+         }
     }
 
     public void MakeCircular(int damage = 1)
