@@ -24,6 +24,8 @@ public class GameManager : MonoBehaviour
     [HideInInspector] public CameraManager CameraManager { get; set; }
     [HideInInspector] public RaycastManager RaycastManager { get; set; }
     [HideInInspector] public MovingPlayerManager MovingPlayerManager { get; set; }
+    [HideInInspector] public EnemyManager EnemyManager { get; set; }
+
 
     public void Awake()
     {
@@ -48,6 +50,7 @@ public class GameManager : MonoBehaviour
             // define your services here
             CameraManager = new CameraManager("Main Camera");
             RaycastManager = new RaycastManager();
+            EnemyManager = new EnemyManager();
             MovingPlayerManager = new MovingPlayerManager("Player");
 
             DontDestroyOnLoad(this.gameObject);

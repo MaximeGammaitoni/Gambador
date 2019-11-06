@@ -13,7 +13,7 @@ public class Damage : MonoBehaviour
     {
         properties = this.gameObject.GetComponent<Properties>();
         enemy = this.gameObject.GetComponent<Enemy>();
-        enemyManager = new EnemyManager();
+        enemyManager = GameManager.singleton.EnemyManager;
     }
 
     #region Make damage 

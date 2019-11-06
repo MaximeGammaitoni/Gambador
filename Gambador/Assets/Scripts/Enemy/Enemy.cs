@@ -4,15 +4,19 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    private EnemyManager enemeyManager;
+    private EnemyManager enemyManager;
     void Start()
     {
-        enemeyManager = new EnemyManager();
+        enemyManager = GameManager.singleton.EnemyManager;
     }
 
     void OnEnable()
     {
+        enemyManager?.OnPop(this);
+    }
 
-        enemeyManager?.OnPop(this);
+    private void OnDisable()
+    {
+        Debug.Log("Restart position ?");
     }
 }
