@@ -47,28 +47,50 @@ public class MovingPlayerManager : BaseGameObjectManager
     IEnumerator MovingPlayerCoroutine(Vector3 destination)
     {
         //il faudra créé un propriété dans le game object player bool "invinsible"
-
+        
         if (canMove)
         {
-            
+            TriggerStartMovingPlayer();
+            var distance = destination - mainGameObject.transform.position;
+            var vulnerabilityStartDistance = distance * Config.StartVulnerabilityInRunRatio;
+            var vulnerabilityBeforeStopDistance = distance * Config.EndVulnerabilityInRunRatio;
+            var invulnerabilityDistance = (distance - vulnerabilityStartDistance) - vulnerabilityBeforeStopDistance;
+            var initialPos = mainGameObject.transform.position;
             canMove = false;
-
-            playerMesh.enabled = false;
-            particleSystem.Play();
             laser.SetActive(false);
 
-            TriggerStartMovingPlayer();
-
-            while (mainGameObject.transform.position != destination)
+            while (mainGameObject.transform.position != initialPos + vulnerabilityStartDistance)
             {
-                mainGameObject.transform.position = Vector3.MoveTowards(mainGameObject.transform.position, destination, speed * Time.deltaTime);
+                mainGameObject.transform.position = Vector3.MoveTowards(mainGameObject.transform.position, initialPos + vulnerabilityStartDistance, speed * Time.deltaTime * Config.TimeScale);
                 yield return null;
             }
 
-            TriggerStopMovingPlayer();
 
+            playerMesh.enabled = false;
+            particleSystem.Play();
+            
+
+           
+            initialPos = mainGameObject.transform.position;
+            while (mainGameObject.transform.position != initialPos + invulnerabilityDistance)
+            {
+                mainGameObject.transform.position = Vector3.MoveTowards(mainGameObject.transform.position, initialPos + invulnerabilityDistance, speed * Time.deltaTime * Config.TimeScale);
+                yield return null;
+            }
+
+            
+            
             playerMesh.enabled = true;
             particleSystem.Stop();
+            float ratioSpeed = 0;
+            initialPos = mainGameObject.transform.position;
+            while (mainGameObject.transform.position != initialPos + vulnerabilityBeforeStopDistance)
+            {
+                mainGameObject.transform.position = Vector3.Lerp(mainGameObject.transform.position, initialPos + vulnerabilityBeforeStopDistance, speed * ratioSpeed /30);
+                ratioSpeed += Time.deltaTime * Config.TimeScale;
+                yield return null;
+            }
+            TriggerStopMovingPlayer();
             laser.SetActive(true);
             canMove = true;
         }
