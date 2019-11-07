@@ -50,7 +50,7 @@ public class RangeManager
             while (RangeRadius != newRange)
             {
                 ratio += 1.5f;
-                RangeRadius = Mathf.Lerp(RangeRadius, newRange, ratio * Time.deltaTime);
+                RangeRadius = Mathf.Lerp(RangeRadius, newRange, ratio * Time.deltaTime * Config.TimeScale);
                 rangeProjector.orthographicSize = RangeRadius;
                 yield return 0;
             }
