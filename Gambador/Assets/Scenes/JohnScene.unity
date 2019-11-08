@@ -5784,7 +5784,6 @@ GameObject:
   - component: {fileID: 642374851}
   - component: {fileID: 642374850}
   - component: {fileID: 642374849}
-  - component: {fileID: 642374848}
   - component: {fileID: 642374847}
   m_Layer: 0
   m_Name: Cube
@@ -5806,21 +5805,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hp: 2
-  moveSpeed: 2
+  moveSpeed: 0
   damage: 1
   attackRange: 1
---- !u!114 &642374848
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 642374846}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e079f7ab32f2a84458da2fc7ca82b51c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &642374849
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6009,7 +5996,6 @@ GameObject:
   - component: {fileID: 1008659387}
   - component: {fileID: 1008659386}
   - component: {fileID: 1008659384}
-  - component: {fileID: 1008659389}
   - component: {fileID: 1008659385}
   m_Layer: 0
   m_Name: Player
@@ -6065,8 +6051,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hp: 2
-  moveSpeed: 2
-  damage: 2
+  moveSpeed: 0
+  damage: 1
   attackRange: 1
 --- !u!65 &1008659386
 BoxCollider:
@@ -6126,18 +6112,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1008659382}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &1008659389
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1008659382}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e079f7ab32f2a84458da2fc7ca82b51c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1025976873
 GameObject:
   m_ObjectHideFlags: 0

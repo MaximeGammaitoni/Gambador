@@ -91,6 +91,7 @@ public class MovingPlayerManager : BaseGameObjectManager
                 yield return null;
             }
             TriggerStopMovingPlayer();
+            GameManager.singleton.AttackManager.AttackEnemy(destination, "Circular");
             laser.SetActive(true);
             canMove = true;
         }

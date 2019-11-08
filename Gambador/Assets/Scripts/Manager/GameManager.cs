@@ -25,6 +25,7 @@ public class GameManager : MonoBehaviour
     [HideInInspector] public RaycastManager RaycastManager { get; set; }
     [HideInInspector] public MovingPlayerManager MovingPlayerManager { get; set; }
     [HideInInspector] public EnemyManager EnemyManager { get; set; }
+    [HideInInspector] public AttackManager AttackManager { get; set; }
     [HideInInspector] public RangeManager RangeManager { get; set; }
 
     public void Awake()
@@ -52,6 +53,7 @@ public class GameManager : MonoBehaviour
             RangeManager = new RangeManager();
             RaycastManager = new RaycastManager();
             EnemyManager = new EnemyManager();
+            AttackManager = new AttackManager();
             MovingPlayerManager = new MovingPlayerManager("Player");
             
             DontDestroyOnLoad(this.gameObject);

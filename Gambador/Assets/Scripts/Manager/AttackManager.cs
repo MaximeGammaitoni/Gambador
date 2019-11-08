@@ -1,0 +1,72 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using System.Reflection;
+using UnityEngine;
+
+public class AttackManager
+{
+    private EnemyManager enemyManager;
+
+    public AttackManager()
+    {
+        enemyManager = GameManager.singleton.EnemyManager;
+    }
+
+    public void AttackEnemy(Vector3 position, string method = "Circular")
+    {
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        Properties playerProperties = player.GetComponent<Properties>();
+        MethodInfo thisMethod = this.GetType().GetMethod("Make" + method, BindingFlags.NonPublic | BindingFlags.Instance);
+        thisMethod?.Invoke(this, new object[] { position, playerProperties.damage, playerProperties.attackRange });
+    }
+
+    #region Make
+    private void MakeCircular(Vector3 position, int damage, float range)
+    {
+        Collider[] hitColliders = Physics.OverlapSphere(position, range);
+        int i = 0;
+        while (i < hitColliders.Length)
+        {
+            Collider currentCollider = hitColliders[i];
+
+            if (currentCollider.tag == "enemy")
+            {
+                this.TakeAttack(currentCollider, damage);
+            }
+
+            i++;
+        }
+    }
+    #endregion 
+
+    #region Take damage 
+    public void TakeAttack(Collider target,  int damage = 1)
+    {
+        Properties properties = target.GetComponent<Properties>();
+        properties.hp -= damage;
+
+        switch (target.tag)
+        {
+            case "enemy":
+                EnemyTake(damage, properties, target);
+                break;
+            case "Player":
+                PlayerTake(damage, properties, target);
+                break;
+        }
+    }
+
+    private void EnemyTake(int damage, Properties properties, Collider target)
+    {
+        if (properties.hp == 0)
+        {
+            enemyManager.EnemyDeath(target.GetComponent<Enemy>());
+        }
+    }
+
+    private void PlayerTake(int damage, Properties properties, Collider target)
+    {
+
+    }
+    #endregion 
+}
