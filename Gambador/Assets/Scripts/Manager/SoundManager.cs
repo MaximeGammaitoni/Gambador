@@ -23,7 +23,7 @@ public class SoundManager
     }
     public void ChangeAudioClip(AudioClip ac, float time)
     {
-        GameManager.singleton.StartCoroutine(AudioController.FadeOutFadeIn(AudioSource,ac,1, time));
+        GameManager.singleton.StartCoroutine(AudioController.FadeOutFadeIn(AudioSource,ac,0.2f, time));
     }
 
 

@@ -16,7 +16,7 @@ public class EnemyManager
 
     public void EnemyDeath(Enemy enemy)
     {
-        Debug.Log(enemy.name + "is dead");
+        enemy.gameObject.SetActive(false);
         EnemyDeathEvent?.Invoke();
     }
 
