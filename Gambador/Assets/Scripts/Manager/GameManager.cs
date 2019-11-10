@@ -27,6 +27,7 @@ public class GameManager : MonoBehaviour
     [HideInInspector] public EnemyManager EnemyManager { get; set; }
     [HideInInspector] public RangeManager RangeManager { get; set; }
     [HideInInspector] public CursorManager CursorManager { get; set; }
+    [HideInInspector] public SoundManager SoundManager { get; set; }
 
     public void Awake()
     {
@@ -55,6 +56,7 @@ public class GameManager : MonoBehaviour
             EnemyManager = new EnemyManager();
             MovingPlayerManager = new MovingPlayerManager("Player");
             CursorManager = new CursorManager();
+            SoundManager = new SoundManager();
             
             
             DontDestroyOnLoad(this.gameObject);
