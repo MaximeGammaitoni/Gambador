@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
 public class RaycastManager
@@ -13,6 +11,8 @@ public class RaycastManager
     private float lastYFromPos;
     private bool block;
     private RangeManager rangeManager;
+    private GameObject gameObjectMousePositionParticle;
+    private ParticleSystem particlesMouse;
     public RaycastManager()
     {
         WalkablesTags = new List<string>();
@@ -25,6 +25,9 @@ public class RaycastManager
         GameManager.GameUpdate += MovingRaycastWithLineRenderer;
 
         rangeManager = GameManager.singleton.RangeManager;
+        gameObjectMousePositionParticle = GameObject.Find("MousePositionParticle");
+        particlesMouse = gameObjectMousePositionParticle.GetComponent<ParticleSystem>();
+        particlesMouse.startColor = Color.green;
 
     }
     public Vector3 GetMousePosition(Vector3 initialPosition)
@@ -55,7 +58,7 @@ public class RaycastManager
         float distance2D = Vector3.Distance(toPosition2D, fromPosition2D);
         float distance = Vector3.Distance(toPosition, fromPosition);
         float radius = rangeManager.RangeRadius;
-        Debug.Log(rangeManager.RangeRadius);
+        
 
         player.transform.LookAt(new Vector3(mousePos.x, player.transform.position.y, mousePos.z));
 
@@ -71,6 +74,7 @@ public class RaycastManager
                 block = false;
                 lr.startColor = Color.green;
                 lr.endColor = Color.green;
+                particlesMouse.startColor = Color.green;
             }
             else
             {
@@ -82,15 +86,27 @@ public class RaycastManager
         {
             block = false;
         }
+        if(mousePos!= player.transform.position)
+        {
+            gameObjectMousePositionParticle.transform.position = mousePos;
+        }
+        else
+        {
+            gameObjectMousePositionParticle.transform.position = Vector3.left * 15000;
+        }
+        
 
         lr.SetPosition(0, player.transform.position);
         lr.SetPosition(1, mousePos);
+        toPosition = mousePos;
+        distance = Vector3.Distance(toPosition, fromPosition);
         if (Physics.Raycast(fromPosition, direction, out hit, distance))
         {
             if (Obstaclestags.Contains(hit.transform.tag)) // there is obstacles in distance beetwen player and mouse pos
             {
                 lr.startColor = Color.red;
                 lr.endColor = Color.red;
+                particlesMouse.startColor = Color.red;
             }
             else
             {
@@ -107,6 +123,7 @@ public class RaycastManager
                 {
                     lr.startColor = Color.red;
                     lr.endColor = Color.red;
+                    particlesMouse.startColor = Color.red;
                 }
             }
         }
@@ -114,6 +131,7 @@ public class RaycastManager
         {
             lr.startColor = Color.green;
             lr.endColor = Color.green;
+            particlesMouse.startColor = Color.green;
 
             if (!block)
             {
@@ -128,6 +146,7 @@ public class RaycastManager
             {
                 lr.startColor = Color.red;
                 lr.endColor = Color.red;
+                particlesMouse.startColor = Color.green;
             }
         }
     }
