@@ -26,6 +26,7 @@ public class GameManager : MonoBehaviour
     [HideInInspector] public MovingPlayerManager MovingPlayerManager { get; set; }
     [HideInInspector] public EnemyManager EnemyManager { get; set; }
     [HideInInspector] public RangeManager RangeManager { get; set; }
+    [HideInInspector] public CursorManager CursorManager { get; set; }
 
     public void Awake()
     {
@@ -53,6 +54,8 @@ public class GameManager : MonoBehaviour
             RaycastManager = new RaycastManager();
             EnemyManager = new EnemyManager();
             MovingPlayerManager = new MovingPlayerManager("Player");
+            CursorManager = new CursorManager();
+            
             
             DontDestroyOnLoad(this.gameObject);
         }
@@ -79,20 +82,18 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
-        if (GameUpdate != null)
-            GameUpdate();
+        GameUpdate?.Invoke();
 
     }
 
     private void OnMouseDown()
     {
-        
+       
     }
 
     private void FixedUpdate()
     {
-        if (GameFixedUpdate != null)
-            GameFixedUpdate();
+        GameFixedUpdate?.Invoke();
     }
     public void StartCouroutineInGameManager(IEnumerator routine, string routineName)
     {
@@ -127,22 +128,18 @@ public class GameManager : MonoBehaviour
 
     void OnApplicationQuit()
     {
-        if (ApplicationOnQuit != null)
-            ApplicationOnQuit();
+        ApplicationOnQuit?.Invoke();
     }
 
     private void OnApplicationFocus(bool focus)
     {
         if (focus)
         {
-            if (ApplicationOnFocus != null)
-                ApplicationOnFocus();
+            ApplicationOnFocus?.Invoke();
         }
         else
         {
-            Debug.Log("Unfocus");
-            if (ApplicationOnPause != null)
-                ApplicationOnPause();
+            ApplicationOnPause?.Invoke();
         }
     }
 
