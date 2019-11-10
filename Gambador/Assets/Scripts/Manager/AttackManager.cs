@@ -6,16 +6,19 @@ using UnityEngine;
 public class AttackManager
 {
     private EnemyManager enemyManager;
+    private GameObject player;
+    private Properties playerProperties;
 
     public AttackManager()
     {
         enemyManager = GameManager.singleton.EnemyManager;
+        player = GameObject.FindGameObjectWithTag("Player");
+        playerProperties = player.GetComponent<Properties>();
     }
 
     public void AttackEnemy(Vector3 position, string method = "Circular")
     {
-        GameObject player = GameObject.FindGameObjectWithTag("Player");
-        Properties playerProperties = player.GetComponent<Properties>();
+
         MethodInfo thisMethod = this.GetType().GetMethod("Make" + method, BindingFlags.NonPublic | BindingFlags.Instance);
         thisMethod?.Invoke(this, new object[] { position, playerProperties.damage, playerProperties.attackRange });
     }
