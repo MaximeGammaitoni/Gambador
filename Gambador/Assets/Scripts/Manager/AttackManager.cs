@@ -21,6 +21,7 @@ public class AttackManager
 
         MethodInfo thisMethod = this.GetType().GetMethod("Make" + method, BindingFlags.NonPublic | BindingFlags.Instance);
         thisMethod?.Invoke(this, new object[] { position, playerProperties.damage, playerProperties.attackRange });
+        
     }
 
     #region Make
@@ -32,7 +33,7 @@ public class AttackManager
         {
             Collider currentCollider = hitColliders[i];
 
-            if (currentCollider.tag == "enemy")
+            if (currentCollider.tag == "Enemy")
             {
                 this.TakeAttack(currentCollider, damage);
             }
@@ -50,7 +51,7 @@ public class AttackManager
 
         switch (target.tag)
         {
-            case "enemy":
+            case "Enemy":
                 EnemyTake(damage, properties, target);
                 break;
             case "Player":
@@ -61,7 +62,8 @@ public class AttackManager
 
     private void EnemyTake(int damage, Properties properties, Collider target)
     {
-        if (properties.hp == 0)
+
+        if (properties.hp <= 0)
         {
             enemyManager.EnemyDeath(target.GetComponent<Enemy>());
         }
