@@ -115,7 +115,7 @@ public class RaycastManager
                     if (Input.GetMouseButtonDown(0)) // not an obstacle in trajectory, player can move
                     {
                         Vector3 objectHit = new Vector3(mousePos.x, mousePos.y, mousePos.z);
-                        GameManager.singleton.RangeManager.UpdateRangeSmoothly(Config.RangeIncrementBy);
+                        //GameManager.singleton.RangeManager.UpdateRangeSmoothly(Config.RangeIncrementBy);
                         GameManager.singleton.MovingPlayerManager.StartMovingPlayer(objectHit);
                     }
                 }
@@ -138,7 +138,7 @@ public class RaycastManager
                 if (Input.GetMouseButtonDown(0)) // not an obstacle in trajectory, player can move
                 {
                     Vector3 objectHit = new Vector3(mousePos.x, mousePos.y, mousePos.z);
-                    GameManager.singleton.RangeManager.UpdateRangeSmoothly(Config.RangeIncrementBy);
+                    //GameManager.singleton.RangeManager.UpdateRangeSmoothly(Config.RangeIncrementBy);
                     GameManager.singleton.MovingPlayerManager.StartMovingPlayer(objectHit);
                 }
             }
