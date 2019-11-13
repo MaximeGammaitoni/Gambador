@@ -12,7 +12,7 @@ public class Enemy : MonoBehaviour
 
     void OnEnable()
     {
-        enemyManager?.OnPop(this);
+        enemyManager?.PopTrigger(this);
     }
 
     private void OnDisable()

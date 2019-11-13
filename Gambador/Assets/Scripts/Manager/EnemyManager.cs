@@ -8,13 +8,13 @@ public class EnemyManager
     [HideInInspector] public static event EnemyEventManager EnemyDeathEvent;
     [HideInInspector] public static event EnemyEventManager PopEvent;
 
-    public void OnPop(Enemy enemy)
+    public void PopTrigger(Enemy enemy)
     {
         Debug.Log("I'm pop" + enemy.name);
         PopEvent?.Invoke();
     }
 
-    public void EnemyDeath(Enemy enemy)
+    public void EnemyDeathTrigger(Enemy enemy)
     {
         enemy.gameObject.SetActive(false);
         EnemyDeathEvent?.Invoke();
