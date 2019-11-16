@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MovingPlayerManager : BaseGameObjectManager
 {
-    private MeshRenderer playerMesh;
+    private GameObject playerMesh;
     private BoxCollider playerCollider;
     private Rigidbody playerRigidBody;
     private ParticleSystem particleSystem;
@@ -20,7 +20,7 @@ public class MovingPlayerManager : BaseGameObjectManager
     public MovingPlayerManager(string gameObjectName) : base(gameObjectName)
     {
         speed = Config.PlayerSpeed;
-        playerMesh = mainGameObject.GetComponent<MeshRenderer>();
+        playerMesh = mainGameObject.transform.Find("PlayerMesh").gameObject;
         playerCollider = mainGameObject.GetComponent<BoxCollider>();
         playerRigidBody = mainGameObject.GetComponent<Rigidbody>();
         laser = mainGameObject.transform.Find("Laser").gameObject;
@@ -66,7 +66,7 @@ public class MovingPlayerManager : BaseGameObjectManager
             }
 
 
-            playerMesh.enabled = false;
+            playerMesh.SetActive(false);
             particleSystem.Play();
             
 
@@ -80,7 +80,8 @@ public class MovingPlayerManager : BaseGameObjectManager
 
             
             
-            playerMesh.enabled = true;
+            playerMesh.SetActive(true);
+            playerMesh.transform.rotation = Quaternion.LookRotation(-invulnerabilityDistance, Vector3.up);
             particleSystem.Stop();
             float ratioSpeed = 0;
             initialPos = mainGameObject.transform.position;
