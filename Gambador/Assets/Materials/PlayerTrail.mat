@@ -7,9 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Wave_World
-  m_Shader: {fileID: -6465566751694194690, guid: 68f325ddbd07c0844a0447432a283c70,
-    type: 3}
+  m_Name: PlayerTrail
+  m_Shader: {fileID: 202, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -20,12 +19,8 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
-    - Texture2D_21DAFD47:
-        m_Texture: {fileID: 2800000, guid: 7f38e838c1882d544ad6baa4dc7f5dd5, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
     - _BaseMap:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: e514ab7dc4924db4ea1028bfccedd0af, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BumpMap:
@@ -37,7 +32,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: e514ab7dc4924db4ea1028bfccedd0af, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
@@ -53,10 +48,6 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - Vector1_1E6ABFFB: 1
-    - Vector1_66BE10D5: 10
-    - Vector1_B35DDEEE: 0
-    - Vector1_E9846D9C: 1
     - _AlphaClip: 0
     - _Blend: 0
     - _BumpScale: 1
@@ -67,6 +58,7 @@ Material:
     - _GlossMapScale: 0
     - _Glossiness: 0
     - _GlossyReflections: 0
+    - _InvFade: 1
     - _Metallic: 0
     - _OcclusionStrength: 1
     - _QueueOffset: 0
@@ -79,14 +71,11 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
-    - Color_5E4954C7: {r: 0, g: 0.55344516, b: 2.6701574, a: 0}
-    - Color_A8A9DBC: {r: 0.05378294, g: 0, b: 1, a: 0}
-    - Vector2_D0A66D03: {r: 0, g: 65.69, b: 0, a: 0}
     - _BaseColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
     - _Color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
---- !u!114 &4988497835598622098
+--- !u!114 &6540083136195619751
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}

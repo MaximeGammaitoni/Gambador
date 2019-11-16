@@ -17,6 +17,7 @@ public class EnemyActive : MonoBehaviour
             }
         }
         EnemyManager.EnemyDeathEvent += EnemyDeath;
+        PlayerDeathManager.OnPlayerDeath += PlayerDeath;
     }
 
     // Update is called once per frame
@@ -34,6 +35,17 @@ public class EnemyActive : MonoBehaviour
             if (child.tag == "Enemy")
             {
                 child.transform.gameObject.SetActive(true);//Todo replace by fx
+            }
+        }
+    }
+
+    private void PlayerDeath()
+    {
+        foreach (Transform child in transform)
+        {
+            if (child.tag == "Enemy")
+            {
+                child.transform.gameObject.SetActive(false);
             }
         }
     }

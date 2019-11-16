@@ -39,7 +39,7 @@ public class AudioTrigger : MonoBehaviour
     void OnTriggerEnter(Collider col)
     {
 
-        if(col.tag == "Player")
+        if(col.tag == Config.PlayerTag)
         {
             GameManager.singleton.SoundManager.ChangeAudioClip(ac, time);
             Destroy(gameObject);

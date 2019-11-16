@@ -6,23 +6,25 @@ public class DoorSwitch : MonoBehaviour
 {
     public Vector3 addDest;
     public GameObject Door;
+    private Vector3 initialPos;
     private bool isOpen = false;
     void Start()
     {
-        
+        initialPos = transform.position;
+        PlayerDeathManager.OnPlayerDeath += PlayerDeath;
     }
     void OnTriggerEnter(Collider col)
     {
-        if (col.tag == "Player" && !isOpen)
+        if (col.tag == Config.PlayerTag && !isOpen)
         {
-            StartCoroutine(OpenDoor());
-            
+            StartCoroutine(OpenDoor(addDest));
+            isOpen = true;
         }
-        isOpen = true;
+       
     
     }
 
-    IEnumerator OpenDoor()
+    IEnumerator OpenDoor(Vector3 addDest)
     {
         var dest = addDest + Door.transform.position;
         float ratioSpeed = 0;
@@ -33,4 +35,10 @@ public class DoorSwitch : MonoBehaviour
             yield return 0;
         }
     }
+    void PlayerDeath()
+    {
+        isOpen = false;
+        StartCoroutine(OpenDoor(initialPos - transform.position));
+    }
+
 }

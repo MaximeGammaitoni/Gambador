@@ -54,7 +54,7 @@ public class AttackManager
             case "Enemy":
                 EnemyTake(damage, properties, target);
                 break;
-            case "Player":
+            case Config.PlayerTag:
                 PlayerTake(damage, properties, target);
                 break;
         }

@@ -7,14 +7,23 @@ public class TargetCameraChanger : MonoBehaviour
     private Transform previousCameraTarget;
 
     // Update is called once per frame
-    void OnTriggerEnter()
+    void OnTriggerEnter(Collider col)
     {
-        previousCameraTarget = GameManager.singleton.CameraManager.GetTargetCamera();
-        GameManager.singleton.CameraManager.ChangeTargetCamera(gameObject.transform.Find("TargetCamera"));
+        if (!PlayerDeathManager.PlayerIsDead && col.name == Config.PlayerTag)
+        {
+            previousCameraTarget = GameManager.singleton.CameraManager.GetTargetCamera();
+            GameManager.singleton.CameraManager.ChangeTargetCamera(gameObject.transform.Find("TargetCamera"));
+        }
+
     }
 
-    private void OnTriggerExit()
+    private void OnTriggerExit(Collider col)
     {
-        GameManager.singleton.CameraManager.ChangeTargetCamera(previousCameraTarget);
+        if(!PlayerDeathManager.PlayerIsDead && col.name == Config.PlayerTag)
+        {
+            GameManager.singleton.CameraManager.ChangeTargetCamera(previousCameraTarget);
+        }
+
     }
+
 }

@@ -29,6 +29,8 @@ public class GameManager : MonoBehaviour
     [HideInInspector] public CursorManager CursorManager { get; set; }
     [HideInInspector] public SoundManager SoundManager { get; set; }
 
+    [HideInInspector] public PlayerDeathManager PlayerDeathManager { get; set; }
+
     public void Awake()
     {
         if (singleton == null)
@@ -57,6 +59,7 @@ public class GameManager : MonoBehaviour
             MovingPlayerManager = new MovingPlayerManager("Player");
             CursorManager = new CursorManager();
             SoundManager = new SoundManager();
+            PlayerDeathManager = new PlayerDeathManager();
             DontDestroyOnLoad(this.gameObject);
         }
         catch (Exception e)

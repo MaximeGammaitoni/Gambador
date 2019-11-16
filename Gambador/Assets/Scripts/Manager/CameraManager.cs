@@ -5,12 +5,15 @@ using UnityStandardAssets._2D;
 
 public class CameraManager : BaseGameObjectManager
 {
+    private Transform playerTargetCamera;
     public CameraManager(string gameObjectName) : base(gameObjectName)
     {
         if (mainGameObject.GetComponent<Camera>() == null)
         {
             Debug.LogError(gameObjectName + " GameObject instantiante in CameraManager is'nt a camera ");
         }
+        playerTargetCamera = GameObject.Find("TargetPlayerCamera").transform;
+        PlayerDeathManager.OnPlayerDeath += ResetTargetCameraOnPlayer;
     }
 
     public Ray RaycastToMousePosition()
@@ -27,5 +30,10 @@ public class CameraManager : BaseGameObjectManager
     public Transform GetTargetCamera()
     {
         return mainGameObject.GetComponent<Camera2DFollow>().target;
+    }
+
+    public void ResetTargetCameraOnPlayer()
+    {
+        ChangeTargetCamera(playerTargetCamera);
     }
 }

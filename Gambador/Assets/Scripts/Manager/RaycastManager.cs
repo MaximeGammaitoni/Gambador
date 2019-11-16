@@ -11,6 +11,7 @@ public class RaycastManager
     private float lastYFromPos;
     private GameObject gameObjectMousePositionParticle;
     private ParticleSystem particlesMouse;
+    private bool rayObstacle;
     public RaycastManager()
     {
         WalkablesTags = new List<string>();
@@ -19,7 +20,7 @@ public class RaycastManager
         Obstaclestags.Add("Obstacle");
         player = GameObject.Find("Player").gameObject;
         lr = player.transform.Find("Laser").GetComponent<LineRenderer>();
-        playerHeight = player.GetComponent<MeshRenderer>().bounds.size.y;
+        //playerHeight = player.transform.Find("PlayerMesh").transform.Find("Plusio").GetComponent<SkinnedMeshRenderer>().bounds.size.y;
         GameManager.GameUpdate += MovingRaycastWithLineRenderer;
 
         gameObjectMousePositionParticle = GameObject.Find("MousePositionParticle");
@@ -45,7 +46,7 @@ public class RaycastManager
     public void MovingRaycastWithLineRenderer()
     {
         Vector3 mousePos = GameManager.singleton.RaycastManager.GetMousePosition(player.transform.position);
-        RaycastHit hit;
+        RaycastHit[] hits;
         Vector3 fromPosition = player.transform.position;
         Vector3 toPosition = mousePos;
         Vector3 direction = toPosition - fromPosition;
@@ -54,7 +55,7 @@ public class RaycastManager
         float distance2D = Vector3.Distance(toPosition2D, fromPosition2D);
         float distance = Vector3.Distance(toPosition, fromPosition);
 
-        player.transform.LookAt(new Vector3(mousePos.x, player.transform.position.y, mousePos.z));
+        //player.transform.LookAt(new Vector3(mousePos.x, player.transform.position.y, mousePos.z));
 
         if (mousePos != player.transform.position)
         {
@@ -70,28 +71,47 @@ public class RaycastManager
         toPosition = mousePos;
         distance = Vector3.Distance(toPosition, fromPosition);
 
-        if (Physics.Raycast(fromPosition, direction, out hit, distance))
+        hits = (Physics.RaycastAll(fromPosition, direction, distance));
+        if(hits.Length > 0)
         {
-            Debug.Log("csdfdffdsfdsfd");
-            if (Obstaclestags.Contains(hit.transform.tag)) // there is obstacles in distance beetwen player and mouse pos
+            for (int i = 0; i < hits.Length; i++)
             {
-                Debug.Break();
-                lr.startColor = Color.red;
-                lr.endColor = Color.red;
-                particlesMouse.startColor = Color.red;
-            }
-            else
-            {
-                if (Input.GetMouseButtonDown(0)) // not an obstacle in trajectory, player can move
+                RaycastHit hit = hits[i];
+                if (Obstaclestags.Contains(hit.transform.tag)) // there is obstacles in distance beetwen player and mouse pos
                 {
-                    Vector3 objectHit = new Vector3(mousePos.x, mousePos.y, mousePos.z);
-                    //GameManager.singleton.RangeManager.UpdateRangeSmoothly(Config.RangeIncrementBy);
-                    GameManager.singleton.MovingPlayerManager.StartMovingPlayer(objectHit);
+                    rayObstacle = true;
+                    break;
                 }
-
-
+                rayObstacle = false;
             }
         }
+        else { rayObstacle = false; }
+        if (rayObstacle) // there is obstacles in distance beetwen player and mouse pos
+        {
+            lr.startColor = Color.red;
+            lr.endColor = Color.red;
+            particlesMouse.startColor = Color.red;
+        }
+        //{
+        //    if (Obstaclestags.Contains(hit.transform.tag)) // there is obstacles in distance beetwen player and mouse pos
+        //    {
+        //        Debug.Break();
+        //        lr.startColor = Color.red;
+        //        lr.endColor = Color.red;
+        //        particlesMouse.startColor = Color.red;
+        //    }
+        //    else
+        //    {
+        //        if (Input.GetMouseButtonDown(0)) // not an obstacle in trajectory, player can move
+        //        {
+        //            Vector3 objectHit = new Vector3(mousePos.x, mousePos.y, mousePos.z);
+        //            //GameManager.singleton.RangeManager.UpdateRangeSmoothly(Config.RangeIncrementBy);
+        //            GameManager.singleton.MovingPlayerManager.StartMovingPlayer(objectHit);
+        //        }
+
+
+        //    }
+        //}
         else
         {
             lr.startColor = Color.green;
