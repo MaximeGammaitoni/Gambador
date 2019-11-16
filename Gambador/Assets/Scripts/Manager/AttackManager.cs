@@ -65,7 +65,7 @@ public class AttackManager
 
         if (properties.hp <= 0)
         {
-            enemyManager.EnemyDeath(target.GetComponent<Enemy>());
+            enemyManager.EnemyDeathTrigger(target.GetComponent<Enemy>());
         }
     }
 
