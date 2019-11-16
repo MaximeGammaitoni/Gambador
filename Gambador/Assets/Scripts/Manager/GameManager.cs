@@ -26,7 +26,6 @@ public class GameManager : MonoBehaviour
     [HideInInspector] public MovingPlayerManager MovingPlayerManager { get; set; }
     [HideInInspector] public EnemyManager EnemyManager { get; set; }
     [HideInInspector] public AttackManager AttackManager { get; set; }
-    [HideInInspector] public RangeManager RangeManager { get; set; }
     [HideInInspector] public CursorManager CursorManager { get; set; }
     [HideInInspector] public SoundManager SoundManager { get; set; }
 
@@ -52,22 +51,18 @@ public class GameManager : MonoBehaviour
         {
             // define your services here
             CameraManager = new CameraManager("Main Camera");
-            RangeManager = new RangeManager();
             RaycastManager = new RaycastManager();
             EnemyManager = new EnemyManager();
             AttackManager = new AttackManager();
             MovingPlayerManager = new MovingPlayerManager("Player");
             CursorManager = new CursorManager();
             SoundManager = new SoundManager();
-            
-            
             DontDestroyOnLoad(this.gameObject);
         }
         catch (Exception e)
         {
             Debug.LogException(e);
         }
-
     }
     public void OnDisable()
     {
@@ -146,7 +141,6 @@ public class GameManager : MonoBehaviour
             ApplicationOnPause?.Invoke();
         }
     }
-
 
     public void DestroyServices()
     {
