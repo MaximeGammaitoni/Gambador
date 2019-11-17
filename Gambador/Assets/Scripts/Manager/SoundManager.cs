@@ -16,6 +16,8 @@ public class SoundManager
         AudioSource = GameObject.Find("Main Camera").GetComponent<AudioSource>();
         corridorBGM = Resources.Load("Sounds/BGM/corridor") as AudioClip;
         level1 = Resources.Load("Sounds/BGM/Level1") as AudioClip;
+        level2 = Resources.Load("Sounds/BGM/Level2") as AudioClip;
+        level3 = Resources.Load("Sounds/BGM/Level3") as AudioClip;
 
         this.AudioSource.clip = corridorBGM;
         this.AudioSource.time = 10;
