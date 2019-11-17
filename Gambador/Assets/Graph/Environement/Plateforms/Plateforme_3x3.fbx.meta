@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d72fe348a45afe64983a1c8d9c005256
+guid: fa49f16f88f6e5c4a9e67cf3563496cb
 ModelImporter:
   serializedVersion: 25
   internalIDToNameTable: []
@@ -7,23 +7,13 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Floor_Border
+      name: Floor_Border.000
     second: {fileID: 2100000, guid: 996590a3539f9374dbf8d70077937a9f, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Floor_Border.001
-    second: {fileID: 2100000, guid: 996590a3539f9374dbf8d70077937a9f, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Floor_Plaque
-    second: {fileID: 2100000, guid: fdbffb8e9f3a56b46b5a68ca7f76a07d, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Floor_Plaque.001
-    second: {fileID: 2100000, guid: fdbffb8e9f3a56b46b5a68ca7f76a07d, type: 2}
+      name: Floor_Plaque.000
+    second: {fileID: 2100000, guid: ffda94215baf3514bbfeba647bc31afb, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
