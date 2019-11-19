@@ -5,6 +5,8 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     private EnemyManager enemyManager;
+    [HideInInspector] public bool canAttack = false;
+
     void Start()
     {
         enemyManager = GameManager.singleton.EnemyManager;

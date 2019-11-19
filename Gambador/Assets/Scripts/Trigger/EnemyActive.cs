@@ -13,7 +13,7 @@ public class EnemyActive : MonoBehaviour
         {
             if (child.tag == "Enemy")
             {
-                child.transform.gameObject.SetActive(false);
+                child.transform.gameObject.SetActive(true); // Make sure enemy is active by default
             }
         }
         EnemyManager.EnemyDeathEvent += EnemyDeath;
@@ -34,7 +34,7 @@ public class EnemyActive : MonoBehaviour
         {
             if (child.tag == "Enemy")
             {
-                child.transform.gameObject.SetActive(true);//Todo replace by fx
+                child.transform.GetComponent<Enemy>().canAttack = true;//Todo replace by fx
             }
         }
     }

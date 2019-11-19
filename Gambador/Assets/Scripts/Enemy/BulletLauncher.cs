@@ -10,8 +10,10 @@ public class BulletLauncher : MonoBehaviour
     public float speed;
     public GameObject Bullet;
     public float LifeTime;
+    private Enemy enemy;
     void Start()
     {
+        enemy = this.GetComponent<Enemy>();
         player = GameObject.Find("Player");
         if(Bullet == null)
         {
@@ -22,18 +24,22 @@ public class BulletLauncher : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(timer <= RateOfFire)
+        if (enemy.canAttack)
         {
-            timer += Time.deltaTime * Config.TimeScale;
-        }
-        else 
-        {
-            GameObject go = Instantiate(Bullet, transform.position, Quaternion.identity);
-            Bullet bulletScript = go.AddComponent<Bullet>();
-            bulletScript.speed = speed;
-            bulletScript.LifeTime = LifeTime;
-            bulletScript.Direction = new Vector3(player.transform.position.x,transform.position.y,player.transform.position.z) - transform.position;
-            timer = 0;
+            if (timer <= RateOfFire)
+            {
+                Debug.Log("Fire");
+                timer += Time.deltaTime * Config.TimeScale;
+            }
+            else
+            {
+                GameObject go = Instantiate(Bullet, transform.position, Quaternion.identity);
+                Bullet bulletScript = go.AddComponent<Bullet>();
+                bulletScript.speed = speed;
+                bulletScript.LifeTime = LifeTime;
+                bulletScript.Direction = new Vector3(player.transform.position.x, transform.position.y, player.transform.position.z) - transform.position;
+                timer = 0;
+            }
         }
     }
 }
