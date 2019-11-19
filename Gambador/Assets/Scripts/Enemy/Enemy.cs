@@ -6,6 +6,7 @@ public class Enemy : MonoBehaviour
 {
     private EnemyManager enemyManager;
     [HideInInspector] public bool canAttack = false;
+    [HideInInspector] public bool canSpawn = true;
 
     void Start()
     {

@@ -25,6 +25,14 @@ public class EnemyActive : MonoBehaviour
     {
         if (CheckIfEnemiesLeft())
             return;
+        foreach (Transform child in transform)
+        {
+            if (child.tag == "Enemy")
+            {
+                child.GetComponent<Enemy>().canSpawn = false;
+                child.transform.gameObject.SetActive(false);
+            }
+        }
         StartCoroutine(OpenDoor());
     }
 
@@ -45,8 +53,13 @@ public class EnemyActive : MonoBehaviour
         {
             if (child.tag == "Enemy")
             {
-                child.transform.gameObject.SetActive(true);
-                child.GetComponent<Enemy>().canAttack = false;
+                Enemy enemy = child.GetComponent<Enemy>();
+                if (enemy.canSpawn)
+                {
+                    child.transform.gameObject.SetActive(true);
+                    enemy.canAttack = false;
+                }
+
             }
         }
     }
