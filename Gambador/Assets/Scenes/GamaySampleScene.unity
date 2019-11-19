@@ -488,7 +488,6 @@ GameObject:
   m_Component:
   - component: {fileID: 240841838}
   - component: {fileID: 240841835}
-  - component: {fileID: 240841839}
   - component: {fileID: 240841840}
   - component: {fileID: 240841841}
   m_Layer: 0
@@ -530,18 +529,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &240841839
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 240841834}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6f3fcfc82eb9f3d44bb27ab838a3dd58, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!54 &240841840
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -740,6 +727,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0d089e68dae8db42a0f88bd921de812, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canAttack: 0
 --- !u!114 &327484033
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12332,6 +12320,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0d089e68dae8db42a0f88bd921de812, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canAttack: 0
 --- !u!65 &1362199496
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12402,7 +12391,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b30ff3e68e7566e43a1e68d70314432f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RateOfFire: 1000
+  RateOfFire: 1
   speed: 10
   Bullet: {fileID: 0}
   LifeTime: 5
@@ -18275,6 +18264,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0d089e68dae8db42a0f88bd921de812, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canAttack: 0
 --- !u!114 &1841433886
 MonoBehaviour:
   m_ObjectHideFlags: 0

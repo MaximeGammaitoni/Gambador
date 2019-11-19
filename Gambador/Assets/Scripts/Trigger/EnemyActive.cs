@@ -45,7 +45,8 @@ public class EnemyActive : MonoBehaviour
         {
             if (child.tag == "Enemy")
             {
-                child.transform.gameObject.SetActive(false);
+                child.transform.gameObject.SetActive(true);
+                child.GetComponent<Enemy>().canAttack = false;
             }
         }
     }
