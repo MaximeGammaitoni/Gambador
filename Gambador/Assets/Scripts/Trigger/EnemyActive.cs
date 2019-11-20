@@ -6,6 +6,8 @@ public class EnemyActive : MonoBehaviour
 {
     public Vector3 addDest;
     public GameObject Door;
+    private bool roomIsClean = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -25,14 +27,7 @@ public class EnemyActive : MonoBehaviour
     {
         if (CheckIfEnemiesLeft())
             return;
-        foreach (Transform child in transform)
-        {
-            if (child.tag == "Enemy")
-            {
-                child.GetComponent<Enemy>().canSpawn = false;
-                child.transform.gameObject.SetActive(false);
-            }
-        }
+        roomIsClean = true;
         StartCoroutine(OpenDoor());
     }
 
@@ -54,7 +49,7 @@ public class EnemyActive : MonoBehaviour
             if (child.tag == "Enemy")
             {
                 Enemy enemy = child.GetComponent<Enemy>();
-                if (enemy.canSpawn)
+                if (! roomIsClean)
                 {
                     child.transform.gameObject.SetActive(true);
                     enemy.canAttack = false;

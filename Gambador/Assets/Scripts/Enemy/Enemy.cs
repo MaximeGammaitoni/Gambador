@@ -5,21 +5,22 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     private EnemyManager enemyManager;
+    private Vector3 initialPosition;
     [HideInInspector] public bool canAttack = false;
-    [HideInInspector] public bool canSpawn = true;
 
     void Start()
     {
         enemyManager = GameManager.singleton.EnemyManager;
+        initialPosition = gameObject.transform.position;
     }
 
-    void OnEnable()
+    public void OnDeath()
     {
-        enemyManager?.PopTrigger(this);
+        transform.position = initialPosition;
     }
 
     private void OnDisable()
     {
-        Debug.Log("Restart position ?");
+        
     }
 }
