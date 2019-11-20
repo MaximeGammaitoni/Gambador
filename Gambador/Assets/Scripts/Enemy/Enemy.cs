@@ -7,6 +7,7 @@ public class Enemy : MonoBehaviour
     private EnemyManager enemyManager;
     private Vector3 initialPosition;
     [HideInInspector] public bool canAttack = false;
+    private Vector3 initialPosition;
     void Start()
     {
         enemyManager = GameManager.singleton.EnemyManager;
