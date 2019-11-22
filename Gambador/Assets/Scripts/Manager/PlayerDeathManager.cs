@@ -17,13 +17,12 @@ public class PlayerDeathManager
 
     public void PlayerDeathTrigger()
     {
-        Debug.Break();
         OnPlayerDeath?.Invoke();
     }
 
     private void PlayerDeath()
     {
         PlayerIsDead = true;
-        player.transform.position = Vector3.zero;
+        player.transform.position = PlayerManager.respawnArea;
     }
 }
