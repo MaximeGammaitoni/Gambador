@@ -713,6 +713,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ced0b17de04f5f4492cfdc36e1540c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canLookAt: 1
 --- !u!114 &327484031
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -740,6 +741,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0d089e68dae8db42a0f88bd921de812, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canAttack: 0
 --- !u!114 &327484033
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -869,6 +871,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ced0b17de04f5f4492cfdc36e1540c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canLookAt: 1
 --- !u!114 &368833898
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -896,6 +899,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0d089e68dae8db42a0f88bd921de812, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canAttack: 0
 --- !u!114 &368833900
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1112,6 +1116,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ced0b17de04f5f4492cfdc36e1540c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canLookAt: 1
 --- !u!114 &384126936
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1139,6 +1144,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0d089e68dae8db42a0f88bd921de812, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canAttack: 0
 --- !u!114 &384126938
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1960,6 +1966,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ced0b17de04f5f4492cfdc36e1540c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canLookAt: 1
 --- !u!114 &821444369
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1987,6 +1994,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0d089e68dae8db42a0f88bd921de812, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canAttack: 0
 --- !u!114 &821444371
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2491,6 +2499,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ced0b17de04f5f4492cfdc36e1540c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canLookAt: 1
 --- !u!114 &962627088
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2518,6 +2527,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0d089e68dae8db42a0f88bd921de812, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canAttack: 0
 --- !u!114 &962627090
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2735,6 +2745,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ced0b17de04f5f4492cfdc36e1540c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canLookAt: 1
 --- !u!114 &1046476738
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2762,6 +2773,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0d089e68dae8db42a0f88bd921de812, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canAttack: 0
 --- !u!114 &1046476740
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8124,6 +8136,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ced0b17de04f5f4492cfdc36e1540c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canLookAt: 1
 --- !u!114 &1107966682
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8151,6 +8164,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0d089e68dae8db42a0f88bd921de812, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canAttack: 0
 --- !u!114 &1107966684
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13243,6 +13257,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0d089e68dae8db42a0f88bd921de812, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canAttack: 0
 --- !u!65 &1362199496
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13313,7 +13328,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b30ff3e68e7566e43a1e68d70314432f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RateOfFire: 1000
+  RateOfFire: 1
   speed: 10
   Bullet: {fileID: 0}
   LifeTime: 5
@@ -13329,6 +13344,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ced0b17de04f5f4492cfdc36e1540c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canLookAt: 1
 --- !u!1 &1419662112
 GameObject:
   m_ObjectHideFlags: 0
@@ -19159,6 +19175,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ced0b17de04f5f4492cfdc36e1540c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canLookAt: 1
 --- !u!114 &1841433884
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19186,6 +19203,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0d089e68dae8db42a0f88bd921de812, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canAttack: 0
 --- !u!114 &1841433886
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -7,6 +7,7 @@ public class Enemy : MonoBehaviour
     private EnemyManager enemyManager;
     private Vector3 initialPosition;
     [HideInInspector] public bool canAttack = false;
+    [HideInInspector] public bool isDead = false;
 
     void Start()
     {
@@ -19,8 +20,8 @@ public class Enemy : MonoBehaviour
         transform.position = initialPosition;
     }
 
-    private void OnDisable()
+    private void OnEnable()
     {
-        
+        isDead = false;
     }
 }

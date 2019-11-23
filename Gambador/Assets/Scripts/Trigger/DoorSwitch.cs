@@ -10,7 +10,7 @@ public class DoorSwitch : MonoBehaviour
     private bool isOpen = false;
     void Start()
     {
-        initialPos = transform.position;
+        initialPos = Door.transform.position;
         PlayerDeathManager.OnPlayerDeath += PlayerDeath;
     }
     void OnTriggerEnter(Collider col)
@@ -38,7 +38,7 @@ public class DoorSwitch : MonoBehaviour
     void PlayerDeath()
     {
         isOpen = false;
-        StartCoroutine(OpenDoor(initialPos - transform.position));
+        StartCoroutine(OpenDoor(initialPos - Door.transform.position));
     }
 
 }
