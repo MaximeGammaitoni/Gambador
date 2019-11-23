@@ -87,7 +87,13 @@ public class MovingPlayerManager : BaseGameObjectManager
             
             
             playerMesh.SetActive(true);
+
             playerMesh.transform.rotation = Quaternion.LookRotation(-invulnerabilityDistance, Vector3.up);
+            RaycastHit hit;
+            if (Physics.Raycast(playerMesh.transform.position, - playerMesh.transform.up,out hit ,0.2f))
+            {
+                playerMesh.transform.rotation = Quaternion.Lerp(playerMesh.transform.rotation, Quaternion.LookRotation(Vector3.Cross(playerMesh.transform.right, hit.normal), hit.normal), 100);
+            }
             particleSystem.Stop();
             float ratioSpeed = 0;
             initialPos = mainGameObject.transform.position;
