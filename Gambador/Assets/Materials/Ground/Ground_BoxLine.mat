@@ -1,18 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-1676683271916561782
-MonoBehaviour:
-  m_ObjectHideFlags: 11
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  version: 1
 --- !u!21 &2100000
 Material:
   serializedVersion: 6
@@ -20,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Door
-  m_Shader: {fileID: -6465566751694194690, guid: 6ca100ab202b8ea4a8aed7c792d55a7c,
+  m_Name: Ground_BoxLine
+  m_Shader: {fileID: -6465566751694194690, guid: 21bcca4b52a659f4ab3bdd6ee9c6ae48,
     type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
@@ -33,8 +20,12 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
-    - Texture2D_9277B674:
-        m_Texture: {fileID: 2800000, guid: d86baf30699cb2343b86609aa03e2248, type: 3}
+    - Texture2D_3C342399:
+        m_Texture: {fileID: 2800000, guid: 5f908b616196fb541b7c71080b6a6310, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_D2826E89:
+        m_Texture: {fileID: 2800000, guid: 3b76c26e025d66045aa97ef0a6ffe224, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BaseMap:
@@ -61,20 +52,13 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _SampleTexture2D_5E99EF78_Texture:
-        m_Texture: {fileID: 2800000, guid: d86baf30699cb2343b86609aa03e2248, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
     - _SpecGlossMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - Vector1_28CC809C: 0.54
-    - Vector1_518E5B03: 10
-    - Vector1_80999B74: 6.63
-    - Vector1_9EB4D203: 0.003
-    - Vector1_E478395A: 2.41
+    - Vector1_348DD553: 0.521
+    - Vector1_506F94AC: 0
     - _AlphaClip: 0
     - _Blend: 0
     - _BumpScale: 1
@@ -97,13 +81,25 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
-    - Color_31368F9A: {r: 0.5188679, g: 0.4429957, b: 0.4429957, a: 0}
-    - Color_7C3CCCBF: {r: 0.25658596, g: 0.5849056, b: 0.5365585, a: 0}
-    - Color_9B56D59B: {r: 7.655854, g: 0.5230708, b: 5.8013306, a: 0}
-    - Color_B49CB5A0: {r: 0, g: 0.9327054, b: 1, a: 0}
-    - Color_EDFE0624: {r: 1.319508, g: 0, b: 0.8848465, a: 0}
-    - Vector3_F89B88B3: {r: 0.2, g: 0, b: 0, a: 0}
-    - _BaseColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
-    - _Color: {r: 0.8, g: 0.8, b: 0.8, a: 1}
-    - _EmissionColor: {r: 0, g: 0, b: 0, a: 0}
+    - Color_6A14E7D4: {r: 0.7075472, g: 0.56953233, b: 0.09011214, a: 0}
+    - Color_7F51D326: {r: 0.5424528, g: 0.59904736, b: 1, a: 0}
+    - Color_93953F88: {r: 0, g: 0.9454925, b: 1, a: 0}
+    - Color_BD2E97BC: {r: 0, g: 1.1486983, b: 1.1434531, a: 0}
+    - Color_FA04E089: {r: 0.060074754, g: 0.25894025, b: 0.509434, a: 0}
+    - _BaseColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    - _Color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
+--- !u!114 &7384734434638046591
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 1
