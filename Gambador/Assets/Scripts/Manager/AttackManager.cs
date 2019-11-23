@@ -102,7 +102,7 @@ public class AttackManager
     private void EnemyTake(int damage, Properties properties, Collider target)
     {
 
-        if (properties.hp <= 0)
+        if (properties.hp <= 0 && !PlayerDeathManager.PlayerIsDead)
         {
             enemyManager.EnemyDeathTrigger(target.GetComponent<Enemy>());
         }
