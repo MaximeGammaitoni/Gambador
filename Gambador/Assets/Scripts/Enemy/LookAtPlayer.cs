@@ -15,10 +15,10 @@ public class LookAtPlayer : MonoBehaviour
     void Update()
     {
         if(canLookAt)
-        transform.LookAt(new Vector3 (player.position.x, transform.position.y, player.position.z));
+            transform.LookAt(new Vector3 (player.position.x, transform.position.y, player.position.z));
     }
     private void OnEnable()
     {
-        canLookAt = true;
+        canLookAt = canLookAt;
     }
 }

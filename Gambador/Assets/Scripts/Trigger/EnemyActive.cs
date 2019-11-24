@@ -73,6 +73,7 @@ public class EnemyActive : MonoBehaviour
 
     IEnumerator OpenDoor()
     {
+
         var dest = addDest + Door.transform.position;
         float ratioSpeed = 0;
         while (Door.transform.position != dest)
