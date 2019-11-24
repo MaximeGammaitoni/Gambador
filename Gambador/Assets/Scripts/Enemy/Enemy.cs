@@ -18,6 +18,7 @@ public class Enemy : MonoBehaviour
     public void OnDeath()
     {
         transform.position = initialPosition;
+        canAttack = false;
     }
 
     private void OnEnable()

@@ -27,6 +27,7 @@ public class EnemyManager
     {
         if (!enemy.isDead)
         {
+            enemy.canAttack = false;
             enemy.isDead = true;
             enemy.GetComponent<LookAtPlayer>().canLookAt = false;
             var playerPos = GameObject.Find("Player").transform.position;
