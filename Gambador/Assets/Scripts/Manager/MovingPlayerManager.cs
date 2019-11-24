@@ -26,6 +26,8 @@ public class MovingPlayerManager : BaseGameObjectManager
         laser = mainGameObject.transform.Find("Laser").gameObject;
         particleSystem = mainGameObject.transform.Find("Particle").GetComponent<ParticleSystem>();
         particleSystem.Stop();
+        PlayerDeathManager.OnPlayerDeath += () => { canMove = false; };
+        PlayerDeathManager.OnPlayerRevive += () => { canMove = true; };
     }
 
     public void StartMovingPlayer(Vector3 dest)
@@ -61,6 +63,8 @@ public class MovingPlayerManager : BaseGameObjectManager
 
             while (mainGameObject.transform.position != initialPos + vulnerabilityStartDistance)
             {
+                if (PlayerDeathManager.PlayerIsDead)
+                    break;
                 mainGameObject.transform.position = Vector3.MoveTowards(mainGameObject.transform.position, initialPos + vulnerabilityStartDistance, speed * Time.deltaTime * Config.TimeScale);
                 yield return null;
             }
@@ -74,6 +78,8 @@ public class MovingPlayerManager : BaseGameObjectManager
             initialPos = mainGameObject.transform.position;
             while (mainGameObject.transform.position != initialPos + invulnerabilityDistance)
             {
+                if (PlayerDeathManager.PlayerIsDead)
+                    break;
                 mainGameObject.transform.position = Vector3.MoveTowards(mainGameObject.transform.position, initialPos + invulnerabilityDistance, speed * Time.deltaTime * Config.TimeScale);
                 yield return null;
             }
@@ -81,12 +87,20 @@ public class MovingPlayerManager : BaseGameObjectManager
             
             
             playerMesh.SetActive(true);
+
             playerMesh.transform.rotation = Quaternion.LookRotation(-invulnerabilityDistance, Vector3.up);
+            RaycastHit hit;
+            if (Physics.Raycast(playerMesh.transform.position, - playerMesh.transform.up,out hit ,0.2f))
+            {
+                playerMesh.transform.rotation = Quaternion.Lerp(playerMesh.transform.rotation, Quaternion.LookRotation(Vector3.Cross(playerMesh.transform.right, hit.normal), hit.normal), 100);
+            }
             particleSystem.Stop();
             float ratioSpeed = 0;
             initialPos = mainGameObject.transform.position;
             while (mainGameObject.transform.position != initialPos + vulnerabilityBeforeStopDistance)
             {
+                if (PlayerDeathManager.PlayerIsDead)
+                    break;
                 mainGameObject.transform.position = Vector3.Lerp(mainGameObject.transform.position, initialPos + vulnerabilityBeforeStopDistance, speed * ratioSpeed /30);
                 ratioSpeed += Time.deltaTime * Config.TimeScale;
                 yield return null;

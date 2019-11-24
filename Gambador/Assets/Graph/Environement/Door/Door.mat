@@ -21,7 +21,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Door
-  m_Shader: {fileID: -6465566751694194690, guid: bdb3c1ea3d5edbb4b83fc9021ce75d94,
+  m_Shader: {fileID: -6465566751694194690, guid: 6ca100ab202b8ea4a8aed7c792d55a7c,
     type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
@@ -61,11 +61,16 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_5E99EF78_Texture:
+        m_Texture: {fileID: 2800000, guid: d86baf30699cb2343b86609aa03e2248, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _SpecGlossMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
+    - Vector1_28CC809C: 0.23
     - Vector1_518E5B03: 10
     - Vector1_80999B74: 6.63
     - Vector1_9EB4D203: 0.003
@@ -95,7 +100,9 @@ Material:
     - Color_31368F9A: {r: 0.5188679, g: 0.4429957, b: 0.4429957, a: 0}
     - Color_7C3CCCBF: {r: 0.25658596, g: 0.5849056, b: 0.5365585, a: 0}
     - Color_9B56D59B: {r: 7.655854, g: 0.5230708, b: 5.8013306, a: 0}
-    - Vector3_F89B88B3: {r: 0.1, g: 0, b: 0, a: 0}
+    - Color_B49CB5A0: {r: 0, g: 0.8063412, b: 0.8603976, a: 0}
+    - Color_EDFE0624: {r: 1.7616467, g: 0, b: 1.1898032, a: 0}
+    - Vector3_F89B88B3: {r: 0.2, g: 0, b: 0, a: 0}
     - _BaseColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
     - _Color: {r: 0.8, g: 0.8, b: 0.8, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 0}

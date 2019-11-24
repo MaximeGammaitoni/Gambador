@@ -6,7 +6,7 @@ public class EnemyActive : MonoBehaviour
 {
     public Vector3 addDest;
     public GameObject Door;
-    private bool roomIsClean = false;
+    public bool roomIsClean = false;
 
     // Start is called before the first frame update
     void Start()
@@ -81,5 +81,6 @@ public class EnemyActive : MonoBehaviour
             ratioSpeed += Time.deltaTime * Config.TimeScale;
             yield return 0;
         }
+        GameManager.singleton.CameraManager.ResetTargetCameraOnPlayer();
     }
 }
