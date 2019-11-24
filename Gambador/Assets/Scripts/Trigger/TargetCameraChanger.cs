@@ -9,7 +9,7 @@ public class TargetCameraChanger : MonoBehaviour
     // Update is called once per frame
     void OnTriggerEnter(Collider col)
     {
-        if (!PlayerDeathManager.PlayerIsDead && col.name == Config.PlayerTag)
+        if (!PlayerDeathManager.PlayerIsDead && col.name == Config.PlayerTag && !GetComponent<EnemyActive>().roomIsClean)
         {
             previousCameraTarget = GameManager.singleton.CameraManager.GetTargetCamera();
             GameManager.singleton.CameraManager.ChangeTargetCamera(gameObject.transform.Find("TargetCamera"));
