@@ -29,7 +29,8 @@ public class EnemyManager
         {
             enemy.canAttack = false;
             enemy.isDead = true;
-            enemy.GetComponent<LookAtPlayer>().canLookAt = false;
+            if(enemy.GetComponent<LookAtPlayer>()!= null)
+                enemy.GetComponent<LookAtPlayer>().canLookAt = false;
             var playerPos = GameObject.Find("Player").transform.position;
             var distance = new Vector3(playerPos.x, enemy.gameObject.transform.position.y, playerPos.z) - enemy.gameObject.transform.position;
             Debug.Log(distance);
