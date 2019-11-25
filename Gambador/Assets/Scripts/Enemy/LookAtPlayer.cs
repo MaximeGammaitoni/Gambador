@@ -19,6 +19,6 @@ public class LookAtPlayer : MonoBehaviour
     }
     private void OnEnable()
     {
-        canLookAt = canLookAt;
+        canLookAt = true;
     }
 }
