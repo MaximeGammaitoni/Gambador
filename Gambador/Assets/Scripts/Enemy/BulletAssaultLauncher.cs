@@ -58,7 +58,7 @@ public class BulletAssaultLauncher : MonoBehaviour
         while (rafaleNumber <= RafaleLength)
         {
             rafaleNumber++;
-            GameObject go = Instantiate(Bullet, transform.position, Quaternion.identity);
+            GameObject go = Instantiate(Bullet, transform);
             Bullet bulletScript = go.AddComponent<Bullet>();
             bulletScript.speed = speed;
             bulletScript.LifeTime = LifeTime;

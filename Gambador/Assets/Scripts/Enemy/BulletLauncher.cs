@@ -43,7 +43,8 @@ public class BulletLauncher : MonoBehaviour
                 }
                 else
                 {
-                    GameObject go = Instantiate(Bullet, transform.position, Quaternion.identity);
+                    GameObject go = Instantiate(Bullet, transform);
+                    //go.transform.rotation.SetEulerAngles(transform.rotation.eulerAngles * -1);
                     Bullet bulletScript = go.AddComponent<Bullet>();
                     bulletScript.speed = speed;
                     bulletScript.LifeTime = LifeTime;
