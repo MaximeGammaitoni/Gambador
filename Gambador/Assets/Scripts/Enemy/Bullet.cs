@@ -11,8 +11,9 @@ public class Bullet : MonoBehaviour
     void Update()
     {
         timer += Time.deltaTime * Config.TimeScale;
-        transform.Translate(Direction.normalized * (speed * Time.deltaTime) * Config.TimeScale);
-        if(timer>= LifeTime)
+        transform.Translate(-transform.forward * (speed * Time.deltaTime) * Config.TimeScale);
+        //transform.rotation.SetEulerAngles(Direction.normalized * (speed * Time.deltaTime) * Config.TimeScale);
+        if (timer>= LifeTime)
         {
             Destroy(gameObject);
         }

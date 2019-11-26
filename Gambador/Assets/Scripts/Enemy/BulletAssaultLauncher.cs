@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BulletLauncher : MonoBehaviour
+public class BulletAssaultLauncher : MonoBehaviour
 {
     private GameObject player;
     public float RateOfFire;
@@ -15,6 +15,8 @@ public class BulletLauncher : MonoBehaviour
     public float DelayBeforeShoot;
     private float delayTimer = 0;
     public bool ShootIstant;
+    public int RafaleLength;
+    private bool rafaleLaunched = false;
     void Start()
     {
         enemy = this.GetComponent<Enemy>();
@@ -30,7 +32,7 @@ public class BulletLauncher : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (enemy.canAttack)
+        if (enemy.canAttack && !rafaleLaunched)
         {
             delayTimer += Time.deltaTime * Config.TimeScale;
             if (delayTimer > DelayBeforeShoot)
@@ -43,20 +45,30 @@ public class BulletLauncher : MonoBehaviour
                 }
                 else
                 {
-                    GameObject go = Instantiate(Bullet, transform);
-                    //go.transform.rotation.SetEulerAngles(transform.rotation.eulerAngles * -1);
-                    Bullet bulletScript = go.AddComponent<Bullet>();
-                    bulletScript.speed = speed;
-                    bulletScript.LifeTime = LifeTime;
-                    if (InPlayerDir)
-                        bulletScript.Direction = new Vector3(player.transform.position.x, transform.position.y, player.transform.position.z) - transform.position;
-                    else
-                        bulletScript.Direction = transform.forward;
+                    StartCoroutine(StartRafale());
                     timer = 0;
                 }
             }
         }
-
+    }
+    IEnumerator StartRafale()
+    {
+        rafaleLaunched = true;
+         int rafaleNumber = 0;
+        while (rafaleNumber <= RafaleLength)
+        {
+            rafaleNumber++;
+            GameObject go = Instantiate(Bullet, transform);
+            Bullet bulletScript = go.AddComponent<Bullet>();
+            bulletScript.speed = speed;
+            bulletScript.LifeTime = LifeTime;
+            if (InPlayerDir)
+                bulletScript.Direction = new Vector3(player.transform.position.x, transform.position.y, player.transform.position.z) - transform.position;
+            else
+                bulletScript.Direction = transform.forward;
+            yield return new WaitForSeconds(0.2f);
+        }
+        rafaleLaunched = false;
 
     }
 }
