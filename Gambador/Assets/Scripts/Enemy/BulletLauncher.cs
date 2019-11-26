@@ -38,7 +38,6 @@ public class BulletLauncher : MonoBehaviour
 
                 if (timer <= RateOfFire)
                 {
-                    Debug.Log("Fire");
                     timer += Time.deltaTime * Config.TimeScale;
                 }
                 else

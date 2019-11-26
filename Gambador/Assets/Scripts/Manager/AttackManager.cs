@@ -68,12 +68,19 @@ public class AttackManager
     {
         Collider[] hitColliders = Physics.OverlapSphere(position, range);
         int i = 0;
+        var songIsPlay = false;
         while (i < hitColliders.Length)
         {
             Collider currentCollider = hitColliders[i];
 
             if (currentCollider.tag == "Enemy")
             {
+                if (!songIsPlay)
+                {
+                    SFXManager.PlayRandomSlash(SFXManager.PlayerAudioSource);
+                    songIsPlay = true;
+                }
+                    
                 this.TakeAttack(currentCollider, damage);
             }
 

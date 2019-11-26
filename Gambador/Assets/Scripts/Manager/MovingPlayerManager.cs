@@ -60,7 +60,7 @@ public class MovingPlayerManager : BaseGameObjectManager
             var initialPos = mainGameObject.transform.position;
             canMove = false;
             laser.SetActive(false);
-
+            SFXManager.PlaySFX(SFXManager.EnterTP, mainGameObject.GetComponent<AudioSource>());
             while (mainGameObject.transform.position != initialPos + vulnerabilityStartDistance)
             {
                 if (PlayerDeathManager.PlayerIsDead)
@@ -108,6 +108,7 @@ public class MovingPlayerManager : BaseGameObjectManager
             TriggerStopMovingPlayer();
             GameManager.singleton.AttackManager.AttackEnemy(destination, "Circular");
             laser.SetActive(true);
+       
             canMove = true;
         }
     }

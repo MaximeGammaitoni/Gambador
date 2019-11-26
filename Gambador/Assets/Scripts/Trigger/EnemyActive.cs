@@ -68,20 +68,25 @@ public class EnemyActive : MonoBehaviour
                 return true;
             }
         }
+        
         return false;
     }
 
     IEnumerator OpenDoor()
     {
-
-        var dest = addDest + Door.transform.position;
-        float ratioSpeed = 0;
-        while (Door.transform.position != dest)
+        if(Door != null)
         {
-            Door.transform.position = Vector3.Lerp(Door.transform.position, dest, ratioSpeed);
-            ratioSpeed += Time.deltaTime * Config.TimeScale;
-            yield return 0;
-        }
-        GameManager.singleton.CameraManager.ResetTargetCameraOnPlayer();
+            //SFXManager.PlaySFX(SFXManager.OpenDoor, SFXManager.PlayerAudioSource);
+            var dest = addDest + Door.transform.position;
+            float ratioSpeed = 0;
+
+            while (Door.transform.position != dest)
+            {
+                Door.transform.position = Vector3.Lerp(Door.transform.position, dest, ratioSpeed);
+                ratioSpeed += Time.deltaTime * Config.TimeScale;
+                yield return 0;
+            }
+            GameManager.singleton.CameraManager.ResetTargetCameraOnPlayer();
+        }  
     }
 }

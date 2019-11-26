@@ -18,6 +18,7 @@ public class PlayerDeathManager
     public void PlayerDeathTrigger()
     {
         GameManager.singleton.StartCoroutine(DeathPlayerAnim());
+        SFXManager.PlaySFX(SFXManager.Death, SFXManager.PlayerAudioSource);
         OnPlayerDeath?.Invoke();
        
     }

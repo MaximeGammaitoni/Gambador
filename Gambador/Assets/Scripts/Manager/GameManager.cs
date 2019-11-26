@@ -60,6 +60,7 @@ public class GameManager : MonoBehaviour
             CursorManager = new CursorManager();
             SoundManager = new SoundManager();
             PlayerDeathManager = new PlayerDeathManager();
+            SFXManager.SetSfx();
             DontDestroyOnLoad(this.gameObject);
         }
         catch (Exception e)
