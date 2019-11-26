@@ -40,7 +40,6 @@ public class EnemyManager
             var speedRatio = 10;
             while (enemy.gameObject.transform.position != destination)
             {
-                Debug.Log(enemy.transform.position);
                 enemy.transform.position = Vector3.Lerp(enemy.gameObject.transform.position, destination, speedRatio * Time.deltaTime * Config.TimeScale);
                 speedRatio++;
                 yield return 0;
@@ -50,6 +49,7 @@ public class EnemyManager
 
             EnemyDeathEvent?.Invoke();
             var go = GameObject.Instantiate(enemyParticle, enemy.gameObject.transform.position, Quaternion.identity);
+            SFXManager.PlaySFX(SFXManager.Explosion, go.GetComponent<AudioSource>());
             go.AddComponent<ParticleStoper>();
             enemy.OnDeath();
         }

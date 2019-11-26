@@ -17,23 +17,23 @@ public class AudioTrigger : MonoBehaviour
         }
         else if (acEnum == AcEnum.level2)
         {
-            ac = GameManager.singleton.SoundManager.corridorBGM;
+            ac = GameManager.singleton.SoundManager.level2;
         }
         else if (acEnum == AcEnum.level3)
         {
-            ac = GameManager.singleton.SoundManager.level2;
+            ac = GameManager.singleton.SoundManager.level3;
         }
         else if (acEnum == AcEnum.level4)
         {
-            ac = GameManager.singleton.SoundManager.level3;
+            ac = GameManager.singleton.SoundManager.level4;
         }
         else if (acEnum == AcEnum.level5)
         {
-            ac = GameManager.singleton.SoundManager.level4;
+            ac = GameManager.singleton.SoundManager.level5;
         }
         else if(acEnum == AcEnum.corridor)
         {
-            ac = GameManager.singleton.SoundManager.level5;
+            ac = GameManager.singleton.SoundManager.corridorBGM;
         }
     }
     void OnTriggerEnter(Collider col)

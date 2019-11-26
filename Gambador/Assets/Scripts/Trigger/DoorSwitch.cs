@@ -20,14 +20,17 @@ public class DoorSwitch : MonoBehaviour
             StartCoroutine(OpenDoor(addDest));
             isOpen = true;
         }
-       
-    
     }
 
     IEnumerator OpenDoor(Vector3 addDest)
     {
         var dest = addDest + Door.transform.position;
         float ratioSpeed = 0;
+        if(dest != initialPos)
+        {
+            SFXManager.PlaySFX(SFXManager.OpenDoor, SFXManager.PlayerAudioSource);
+        }
+        
         while (Door.transform.position != dest)
         {
             Door.transform.position = Vector3.Lerp(Door.transform.position, dest,  ratioSpeed);
