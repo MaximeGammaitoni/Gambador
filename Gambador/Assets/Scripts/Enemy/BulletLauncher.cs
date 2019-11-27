@@ -43,6 +43,7 @@ public class BulletLauncher : MonoBehaviour
                 else
                 {
                     GameObject go = Instantiate(Bullet, transform);
+                    go.transform.parent = null;
                     //go.transform.rotation.SetEulerAngles(transform.rotation.eulerAngles * -1);
                     Bullet bulletScript = go.AddComponent<Bullet>();
                     bulletScript.speed = speed;
