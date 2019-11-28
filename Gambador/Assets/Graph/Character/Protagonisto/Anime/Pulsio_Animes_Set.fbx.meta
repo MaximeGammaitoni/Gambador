@@ -18,7 +18,27 @@ ModelImporter:
   - first:
       74: -7241122817946556253
     second: Armature|StartMoove
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Body
+    second: {fileID: 2100000, guid: 02ce8566a618d6c45b6169df15bfd8e9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Head
+    second: {fileID: 2100000, guid: 9c282ff5843beb54e85ac888b424589b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Head_Vitre
+    second: {fileID: 2100000, guid: cf4071055550c5e4d9eda146f8b2e9c1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Katana
+    second: {fileID: 2100000, guid: dfeb3a1859f2d654ea141a5dbdf7157b, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
