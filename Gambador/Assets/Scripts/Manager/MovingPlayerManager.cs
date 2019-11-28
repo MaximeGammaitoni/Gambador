@@ -10,7 +10,7 @@ public class MovingPlayerManager : BaseGameObjectManager
     private ParticleSystem particleSystem;
     private GameObject laser;
     private float speed;
-    private bool canMove = true;
+    public bool canMove = true;
 
     [HideInInspector] public delegate void PlayerMovingEventManager();
 
@@ -55,7 +55,15 @@ public class MovingPlayerManager : BaseGameObjectManager
             TriggerStartMovingPlayer();
             var distance = destination - mainGameObject.transform.position;
             var vulnerabilityStartDistance = distance * Config.StartVulnerabilityInRunRatio;
-            var vulnerabilityBeforeStopDistance = distance * Config.EndVulnerabilityInRunRatio;
+            var vulnerabilityBeforeStopDistance = distance * 0;
+            if (GameManager.singleton.AttackManager.IsAttacking)
+            {
+                vulnerabilityBeforeStopDistance = distance * Config.EndVulnerabilityInRunRatio;
+            }
+
+
+                
+
             var invulnerabilityDistance = (distance - vulnerabilityStartDistance) - vulnerabilityBeforeStopDistance;
             var initialPos = mainGameObject.transform.position;
             canMove = false;
@@ -99,12 +107,19 @@ public class MovingPlayerManager : BaseGameObjectManager
             initialPos = mainGameObject.transform.position;
             while (mainGameObject.transform.position != initialPos + vulnerabilityBeforeStopDistance)
             {
+                if (GameManager.singleton.AttackManager.IsAttacking)
+                {
+                    playerMesh.GetComponent<Animator>().SetBool("Attack", true);
+                }
+               
                 if (PlayerDeathManager.PlayerIsDead)
                     break;
-                mainGameObject.transform.position = Vector3.Lerp(mainGameObject.transform.position, initialPos + vulnerabilityBeforeStopDistance, speed * ratioSpeed /30);
+                mainGameObject.transform.position = Vector3.MoveTowards(mainGameObject.transform.position, initialPos + vulnerabilityBeforeStopDistance, speed * ratioSpeed /30);
                 ratioSpeed += Time.deltaTime * Config.TimeScale;
                 yield return null;
             }
+            GameManager.singleton.AttackManager.IsAttacking = false;
+            playerMesh.GetComponent<Animator>().SetBool("Attack", false);
             TriggerStopMovingPlayer();
             GameManager.singleton.AttackManager.AttackEnemy(destination, "Circular");
             laser.SetActive(true);

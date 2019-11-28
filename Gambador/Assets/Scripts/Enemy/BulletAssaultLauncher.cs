@@ -27,6 +27,7 @@ public class BulletAssaultLauncher : MonoBehaviour
         }
         if (ShootIstant)
             timer = RateOfFire;
+        PlayerDeathManager.OnPlayerDeath += PlayerDeath;
     }
 
     // Update is called once per frame
@@ -70,5 +71,10 @@ public class BulletAssaultLauncher : MonoBehaviour
         }
         rafaleLaunched = false;
 
+    }
+    private void PlayerDeath()
+    {
+        timer = 0;
+        delayTimer = 0;
     }
 }
