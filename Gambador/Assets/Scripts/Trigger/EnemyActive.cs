@@ -27,6 +27,8 @@ public class EnemyActive : MonoBehaviour
     {
         if (CheckIfEnemiesLeft())
             return;
+       
+        EnemyManager.EnemyDeathEvent -= EnemyDeath;
         roomIsClean = true;
         StartCoroutine(OpenDoor());
     }
@@ -63,7 +65,8 @@ public class EnemyActive : MonoBehaviour
     {
         foreach (Transform child in transform)
         {
-            if (child.tag == "Enemy" && child.gameObject.activeSelf)
+            var test = transform.name;
+            if (child.tag == "Enemy" && child.gameObject.activeInHierarchy)
             {
                 return true;
             }
@@ -76,7 +79,7 @@ public class EnemyActive : MonoBehaviour
     {
         if(Door != null)
         {
-            //SFXManager.PlaySFX(SFXManager.OpenDoor, SFXManager.PlayerAudioSource);
+            SFXManager.PlaySFX(SFXManager.OpenDoor, SFXManager.PlayerAudioSource);
             var dest = addDest + Door.transform.position;
             float ratioSpeed = 0;
 
