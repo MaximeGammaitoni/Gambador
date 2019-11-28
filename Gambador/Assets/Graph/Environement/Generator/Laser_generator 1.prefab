@@ -1,5 +1,18 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!65 &2470496918431948651
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3483011634702640307}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1.0521535, z: 0.96715707}
+  m_Center: {x: 4.5693397e-13, y: 0.46807435, z: 0.22262214}
 --- !u!1 &4111831378885797387
 GameObject:
   m_ObjectHideFlags: 0
@@ -4819,6 +4832,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4111831378963104047}
+  - component: {fileID: 6772363621802132884}
   m_Layer: 0
   m_Name: Laser_generator 1
   m_TagString: Untagged
@@ -4843,6 +4857,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &6772363621802132884
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4111831378963104032}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 0
+  serializedVersion: 2
+  m_Size: {x: 0.58479714, y: 2.1956115, z: 5.0514116}
+  m_Center: {x: 0.77218354, y: 0.59780574, z: 0.9184637}
 --- !u!1 &4111831379148290299
 GameObject:
   m_ObjectHideFlags: 0
@@ -4853,7 +4880,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4111831379148290298}
   - component: {fileID: 4111831379148290297}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: LaserSmall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4983,7 +5010,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4111831379713773104}
-  m_Layer: 0
+  - component: {fileID: 6320090367892863048}
+  - component: {fileID: 1168871294330129310}
+  m_Layer: 2
   m_Name: Laser_Beam
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5008,6 +5037,31 @@ Transform:
   m_Father: {fileID: 4111831378963104047}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &6320090367892863048
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4111831379713773105}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.2462573, z: 5.3234334}
+  m_Center: {x: 0, y: 0.62312865, z: 2.8884985}
+--- !u!114 &1168871294330129310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4111831379713773105}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf490e99b3be40349ac7800a20319d27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4111831379715274331
 GameObject:
   m_ObjectHideFlags: 0
@@ -5018,7 +5072,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4111831379715274330}
   - component: {fileID: 4111831379715274329}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: LaserMid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9910,7 +9964,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4111831380233763925}
   - component: {fileID: 4111831380233763924}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: LaserLine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10041,7 +10095,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4111831380730070105}
   - component: {fileID: 4111831380730070104}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: LaserLarge
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10162,6 +10216,19 @@ LineRenderer:
     generateLightingData: 0
   m_UseWorldSpace: 0
   m_Loop: 0
+--- !u!65 &2634586635488239097
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5346271716771422437}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1.1935365, z: 1.1369202}
+  m_Center: {x: 1.1492543e-13, y: 0.5888648, z: 0.06846013}
 --- !u!1 &5821665919132711849
 GameObject:
   m_ObjectHideFlags: 0
@@ -19750,6 +19817,21 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 8427789efaee2a449a9a1bc80de03d55,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 8427789efaee2a449a9a1bc80de03d55,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8416662436099880009, guid: 8427789efaee2a449a9a1bc80de03d55,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 8427789efaee2a449a9a1bc80de03d55,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -19825,8 +19907,19 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 32d2140660618c849b37b2e5b4f60f06, type: 2}
+    - target: {fileID: 8593144945983632923, guid: 8427789efaee2a449a9a1bc80de03d55,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8427789efaee2a449a9a1bc80de03d55, type: 3}
+--- !u!1 &5346271716771422437 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 8427789efaee2a449a9a1bc80de03d55,
+    type: 3}
+  m_PrefabInstance: {fileID: 4111831379123091948}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8965149618374841078 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 8427789efaee2a449a9a1bc80de03d55,
@@ -19849,6 +19942,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 8427789efaee2a449a9a1bc80de03d55,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 8427789efaee2a449a9a1bc80de03d55,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8416662436099880009, guid: 8427789efaee2a449a9a1bc80de03d55,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 8427789efaee2a449a9a1bc80de03d55,
         type: 3}
@@ -19925,8 +20033,19 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 32d2140660618c849b37b2e5b4f60f06, type: 2}
+    - target: {fileID: 8593144945983632923, guid: 8427789efaee2a449a9a1bc80de03d55,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8427789efaee2a449a9a1bc80de03d55, type: 3}
+--- !u!1 &3483011634702640307 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 8427789efaee2a449a9a1bc80de03d55,
+    type: 3}
+  m_PrefabInstance: {fileID: 4861576109194460602}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &436142694022387360 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 8427789efaee2a449a9a1bc80de03d55,

@@ -47,10 +47,11 @@ public class EnemyManager
             yield return new WaitForSeconds(0.2f);
             enemy.gameObject.SetActive(false);
 
-            EnemyDeathEvent?.Invoke();
+            
             var go = GameObject.Instantiate(enemyParticle, enemy.gameObject.transform.position, Quaternion.identity);
             SFXManager.PlaySFX(SFXManager.Explosion, go.GetComponent<AudioSource>());
             go.AddComponent<ParticleStoper>();
+            EnemyDeathEvent?.Invoke();
             enemy.OnDeath();
         }
     }
