@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class AttackManager
 {
+
+    public bool IsAttacking = false;
     private EnemyManager enemyManager;
     private GameObject player;
     private Properties playerProperties;
@@ -45,10 +47,15 @@ public class AttackManager
             if (EnnemyInCircle)
             {
 
+                    IsAttacking = true;
+                
+                
                 pulseParticleGO.transform.position = mousePos;
             }
             else
             {
+                if(GameManager.singleton.MovingPlayerManager.canMove)
+                    IsAttacking = false;
                 pulseParticleGO.transform.position = Vector3.zero;
             }
         }
@@ -108,7 +115,7 @@ public class AttackManager
 
     private void EnemyTake(int damage, Properties properties, Collider target)
     {
-
+       
         if (properties.hp <= 0 && !PlayerDeathManager.PlayerIsDead)
         {
             enemyManager.EnemyDeathTrigger(target.GetComponent<Enemy>());

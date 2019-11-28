@@ -9,6 +9,6 @@ public static class Config
     public static readonly float PlayerSpeed = 50;
     public const  float AttackRange = 4;
     public static readonly float StartVulnerabilityInRunRatio = 0.0f ; //dans un dash au début, le ratio ou le player est vulnerable
-    public static readonly float EndVulnerabilityInRunRatio = 0.0f; //dans un dash a la fin, meme chose 
+    public static readonly float EndVulnerabilityInRunRatio = 0.15f; //dans un dash a la fin, meme chose 
     public static readonly float TimeBeforeRevive = 1f;
 }
