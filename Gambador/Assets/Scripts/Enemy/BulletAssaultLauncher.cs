@@ -60,6 +60,7 @@ public class BulletAssaultLauncher : MonoBehaviour
         {
             rafaleNumber++;
             GameObject go = Instantiate(Bullet, transform);
+            go.transform.parent = null;
             Bullet bulletScript = go.AddComponent<Bullet>();
             bulletScript.speed = speed;
             bulletScript.LifeTime = LifeTime;
