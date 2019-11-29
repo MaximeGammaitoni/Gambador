@@ -35,17 +35,17 @@ public class EnemyManager
             var playerPos = GameObject.Find("Player").transform.position;
             var distance = new Vector3(playerPos.x, enemy.gameObject.transform.position.y, playerPos.z) - enemy.gameObject.transform.position;
             Debug.Log(distance);
-            Vector3 direction = -distance.normalized * 3;
+            Vector3 direction = -distance.normalized * 2.5f;
             var origin = enemy.gameObject.transform.position;
             var destination = origin + direction;
             var speedRatio = 10;
             while (enemy.gameObject.transform.position != destination)
             {
-                enemy.transform.position = Vector3.Lerp(enemy.gameObject.transform.position, destination, speedRatio * Time.deltaTime * Config.TimeScale);
+                enemy.transform.position = Vector3.Lerp(enemy.gameObject.transform.position, destination,1.3f* speedRatio * (Time.deltaTime) * Config.TimeScale);
                 speedRatio++;
                 yield return 0;
             }
-            yield return new WaitForSeconds(0.2f);
+            yield return new WaitForSeconds(0.01f);
             enemy.gameObject.SetActive(false);
 
             

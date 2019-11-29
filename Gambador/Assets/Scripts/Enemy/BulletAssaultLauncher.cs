@@ -71,7 +71,6 @@ public class BulletAssaultLauncher : MonoBehaviour
             yield return new WaitForSeconds(0.2f);
         }
         rafaleLaunched = false;
-
     }
     private void PlayerDeath()
     {
