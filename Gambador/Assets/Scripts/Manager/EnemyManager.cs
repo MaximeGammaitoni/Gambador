@@ -22,6 +22,7 @@ public class EnemyManager
     {
 
         GameManager.singleton.StartCoroutine(DeathAnimCoroutine(enemy));
+        enemy.GetComponentInChildren<Animator>().enabled = false;
     }
     IEnumerator DeathAnimCoroutine(Enemy enemy)
     {

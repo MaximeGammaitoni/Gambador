@@ -54,6 +54,7 @@ public class EnemyActive : MonoBehaviour
                 if (! roomIsClean)
                 {
                     child.transform.gameObject.SetActive(true);
+                    child.GetComponentInChildren<Animator>().enabled = true;
                     enemy.canAttack = false;
                 }
 
