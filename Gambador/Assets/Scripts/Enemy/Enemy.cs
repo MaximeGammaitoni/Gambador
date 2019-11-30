@@ -15,10 +15,14 @@ public class Enemy : MonoBehaviour
         initialPosition = gameObject.transform.position;
     }
 
-    public void OnDeath()
+    public void setCanAttackFalse()
+    {
+       
+        canAttack = false;
+    }
+    public void setPositionInitialPOsition()
     {
         transform.position = initialPosition;
-        canAttack = false;
     }
 
     private void OnEnable()
