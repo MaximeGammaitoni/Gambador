@@ -35,3 +35,5 @@ sysinfo.txt
 *.apk
 *.unitypackage
 Gambador/Assets/Resources/Sounds/SFX.meta
+Gambador/Assets/Graph/Fx/Ondewave.meta
+Gambador/Assets/Graph/Fx/Respawn/Respawn.unitypackage.meta
