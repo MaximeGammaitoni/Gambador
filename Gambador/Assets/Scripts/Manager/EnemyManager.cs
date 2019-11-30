@@ -41,7 +41,7 @@ public class EnemyManager
             var speedRatio = 10;
             while (enemy.gameObject.transform.position != destination)
             {
-                enemy.transform.position = Vector3.Lerp(enemy.gameObject.transform.position, destination,1.3f* speedRatio * (Time.deltaTime) * Config.TimeScale);
+                enemy.transform.position = Vector3.Lerp(enemy.gameObject.transform.position, destination,2f* speedRatio * (Time.deltaTime) * Config.TimeScale);
                 speedRatio++;
                 yield return 0;
             }
@@ -53,7 +53,7 @@ public class EnemyManager
             SFXManager.PlaySFX(SFXManager.Explosion, go.GetComponent<AudioSource>());
             go.AddComponent<ParticleStoper>();
             EnemyDeathEvent?.Invoke();
-            enemy.OnDeath();
+            enemy.setPositionInitialPOsition();
         }
     }
 

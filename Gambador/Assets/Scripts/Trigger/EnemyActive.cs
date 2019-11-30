@@ -35,11 +35,28 @@ public class EnemyActive : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        foreach (Transform child in transform)
+        if(other.tag == "Player")
         {
-            if (child.tag == "Enemy")
+            foreach (Transform child in transform)
             {
-                child.transform.GetComponent<Enemy>().canAttack = true;//Todo replace by fx
+                if (child.tag == "Enemy")
+                {
+                    child.transform.GetComponent<Enemy>().canAttack = true;
+                }
+            }
+        }
+
+    }
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.tag == "Player")
+        {
+            foreach (Transform child in transform)
+            {
+                if (child.tag == "Enemy")
+                {
+                    child.transform.GetComponent<Enemy>().canAttack = false;
+                }
             }
         }
     }
@@ -51,11 +68,11 @@ public class EnemyActive : MonoBehaviour
             if (child.tag == "Enemy")
             {
                 Enemy enemy = child.GetComponent<Enemy>();
+                enemy.canAttack = false;
                 if (! roomIsClean)
                 {
                     child.transform.gameObject.SetActive(true);
                     child.GetComponentInChildren<Animator>().enabled = true;
-                    enemy.canAttack = false;
                 }
 
             }
