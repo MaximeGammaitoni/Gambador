@@ -25,6 +25,8 @@ public class BulletLauncher : MonoBehaviour
         }
         if (ShootIstant)
             timer = RateOfFire;
+
+        PlayerDeathManager.OnPlayerDeath += PlayerDeath;
     }
 
     // Update is called once per frame
@@ -58,5 +60,10 @@ public class BulletLauncher : MonoBehaviour
         }
 
 
+    }
+    private void PlayerDeath()
+    {
+        timer = 0;
+        delayTimer = 0;
     }
 }
