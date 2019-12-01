@@ -295,21 +295,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Drone_Pulsor
       objectReference: {fileID: 0}
-    - target: {fileID: 1309762657907660381, guid: 00f61ccd07e492e4d8be17f66ce7240a,
-        type: 3}
-      propertyPath: m_RenderMode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1309762657907660381, guid: 00f61ccd07e492e4d8be17f66ce7240a,
-        type: 3}
-      propertyPath: m_Materials.Array.data[1]
-      value: 
-      objectReference: {fileID: 2100000, guid: 93c97da0a9a11174ab89575db81f7917, type: 2}
-    - target: {fileID: 1309762657907660381, guid: 00f61ccd07e492e4d8be17f66ce7240a,
-        type: 3}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
     - target: {fileID: 3529093753204076714, guid: 00f61ccd07e492e4d8be17f66ce7240a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -380,6 +365,21 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.38506824
       objectReference: {fileID: 0}
+    - target: {fileID: 1309762657907660381, guid: 00f61ccd07e492e4d8be17f66ce7240a,
+        type: 3}
+      propertyPath: m_RenderMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1309762657907660381, guid: 00f61ccd07e492e4d8be17f66ce7240a,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 93c97da0a9a11174ab89575db81f7917, type: 2}
+    - target: {fileID: 1309762657907660381, guid: 00f61ccd07e492e4d8be17f66ce7240a,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
     - target: {fileID: 4572322459030158560, guid: 00f61ccd07e492e4d8be17f66ce7240a,
         type: 3}
       propertyPath: SizeModule.curve.maxCurve.m_Curve.Array.size
@@ -423,7 +423,7 @@ PrefabInstance:
     - target: {fileID: 4572322459030158560, guid: 00f61ccd07e492e4d8be17f66ce7240a,
         type: 3}
       propertyPath: moveWithTransform
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4572322459030158560, guid: 00f61ccd07e492e4d8be17f66ce7240a,
         type: 3}

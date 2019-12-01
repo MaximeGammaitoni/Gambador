@@ -33,26 +33,19 @@ public class GameManager : MonoBehaviour
 
     public void Awake()
     {
-        if (singleton == null)
-        {
-            singleton = this;
-            Debug.Log("singleton:" + singleton.ToString() + " is created");
-        }
-        else if (singleton != null && singleton != this)
-        {
-            Debug.LogWarning("singleton:" + singleton.ToString());
-            Debug.LogWarning("GameManager Gameobject, OnAwake : Singleton already assigned. Need to destroy this gameobject.");
-            Destroy(this);
-            return;
-        }
+        GameUpdate = null;
+        GameFixedUpdate = null;
+        singleton = this;
+        Debug.Log("singleton:" + singleton.ToString() + " is created");
         StartGameManager();
     }
     private void StartGameManager()
     {
         try
         {
+           
             // define your services here
-            CameraManager = new CameraManager("Main Camera");
+            
             RaycastManager = new RaycastManager();
             EnemyManager = new EnemyManager();
             AttackManager = new AttackManager();
@@ -60,8 +53,9 @@ public class GameManager : MonoBehaviour
             CursorManager = new CursorManager();
             SoundManager = new SoundManager();
             PlayerDeathManager = new PlayerDeathManager();
+            CameraManager = new CameraManager("Main Camera");
+
             SFXManager.SetSfx();
-            DontDestroyOnLoad(this.gameObject);
         }
         catch (Exception e)
         {
@@ -153,13 +147,20 @@ public class GameManager : MonoBehaviour
         DestroyAllClients();
         DestroyAllListeners();
         coroutines = null;
+        //System.Web.HttpRuntime.UnloadAppDomain();
     }
 
     private void DestroyAllManagers()
     {
+        // define your services here
         CameraManager = null;
-        RaycastManager = null;
-        MovingPlayerManager = null;
+        RaycastManager =null;
+        EnemyManager = null;
+        AttackManager =null;
+        MovingPlayerManager =null;
+        CursorManager =null;
+        SoundManager = null;
+        PlayerDeathManager =  null;
     }
     private void DestroyAllClients()
     {
