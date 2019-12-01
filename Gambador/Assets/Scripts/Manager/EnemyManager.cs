@@ -11,6 +11,8 @@ public class EnemyManager
 
     public EnemyManager()
     {
+        PopEvent = null;
+        EnemyDeathEvent = null;
         enemyParticle = Resources.Load("GameObject/EnemyParticle") as GameObject;
     }
     public void PopTrigger(Enemy enemy)

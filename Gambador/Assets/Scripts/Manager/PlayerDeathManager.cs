@@ -12,6 +12,8 @@ public class PlayerDeathManager
 
     public PlayerDeathManager()
     {
+        OnPlayerDeath = null;
+        OnPlayerRevive = null;
         player = GameObject.Find("Player");
     }
 

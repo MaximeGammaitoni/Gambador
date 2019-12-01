@@ -19,6 +19,8 @@ public class MovingPlayerManager : BaseGameObjectManager
 
     public MovingPlayerManager(string gameObjectName) : base(gameObjectName)
     {
+        PlayerMovingEventStart = null;
+        PlayerMovingEventStop = null;
         speed = Config.PlayerSpeed;
         playerMesh = mainGameObject.transform.Find("PlayerMesh").gameObject;
         playerCollider = mainGameObject.GetComponent<BoxCollider>();

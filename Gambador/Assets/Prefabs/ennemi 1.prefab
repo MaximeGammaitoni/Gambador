@@ -230,6 +230,7 @@ MonoBehaviour:
   DelayBeforeShoot: 0
   ShootIstant: 0
   RafaleLength: 0
+  rafaleLaunched: 0
 --- !u!1 &9032848339239765297
 GameObject:
   m_ObjectHideFlags: 0
