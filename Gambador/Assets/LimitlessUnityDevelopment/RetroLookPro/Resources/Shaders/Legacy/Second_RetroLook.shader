@@ -272,8 +272,6 @@ half3 adj = 	half3(0.0,0.0,0.0);
 				      	}
 			      	#else				      	
 				         if(i_<25 && i_>=0){ 
-					         if(p.y<luma_filter[i_]+d && p.y>luma_filter[i_]-d) colDebug += half3(0.5, 0.0, 0.0);
-					         if(p.y<luma_filter[i_]+d*4.0 && p.y>luma_filter[i_]-d*4.0) rgb /=4.0;
 					         if(p.y<chroma_filter[i_]+d && p.y>chroma_filter[i_]-d) colDebug += half3(0.5, 0.0, 0.5);                    
 					         if(p.y<chroma_filter[i_]+d*4.0 && p.y>chroma_filter[i_]-d*4.0) rgb /=4.0;                   
 				      	}
