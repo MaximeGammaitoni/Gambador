@@ -94,8 +94,8 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaDirect: 0.5
     m_PVRFilteringAtrousPositionSigmaIndirect: 2
     m_PVRFilteringAtrousPositionSigmaAO: 1
-    m_ShowResolutionOverlay: 1
     m_ExportTrainingData: 0
+    m_TrainingDataDestination: TrainingData
   m_LightingDataAsset: {fileID: 0}
   m_UseShadowmask: 1
 --- !u!196 &4
@@ -125,7 +125,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 845287146}
     m_Modifications:
     - target: {fileID: 5966395321279497236, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
         type: 3}
@@ -145,7 +145,7 @@ PrefabInstance:
     - target: {fileID: 5966395321279497259, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 662.72
+      value: 652.81995
       objectReference: {fileID: 0}
     - target: {fileID: 5966395321279497259, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
         type: 3}
@@ -170,7 +170,7 @@ PrefabInstance:
     - target: {fileID: 5966395321279497259, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
         type: 3}
       propertyPath: m_RootOrder
-      value: 34
+      value: 121
       objectReference: {fileID: 0}
     - target: {fileID: 5966395321279497259, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
         type: 3}
@@ -312,6 +312,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -423,6 +424,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -628,6 +630,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -817,6 +820,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -894,6 +898,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -1005,6 +1010,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -1243,6 +1249,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -1514,6 +1521,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -1705,6 +1713,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -1854,6 +1863,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -2030,6 +2040,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -2215,6 +2226,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -2312,6 +2324,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -2673,6 +2686,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 9032848338620906573, guid: 45dc6d9dc6e43fc49959c759bff58183,
     type: 3}
   m_PrefabInstance: {fileID: 293332309}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &72852345 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5966395321279497259, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
+    type: 3}
+  m_PrefabInstance: {fileID: 759376186}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &74744151
 GameObject:
@@ -3314,6 +3333,12 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!4 &94689965 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5966395321279497259, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
+    type: 3}
+  m_PrefabInstance: {fileID: 1474602045}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &96109485
 GameObject:
   m_ObjectHideFlags: 0
@@ -3405,6 +3430,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -3774,6 +3800,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -4137,6 +4164,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -4214,6 +4242,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -4291,6 +4320,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -4482,6 +4512,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -4507,7 +4538,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 845287146}
     m_Modifications:
     - target: {fileID: 5966395321279497236, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
         type: 3}
@@ -4527,7 +4558,7 @@ PrefabInstance:
     - target: {fileID: 5966395321279497259, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 649.19995
+      value: 639.2999
       objectReference: {fileID: 0}
     - target: {fileID: 5966395321279497259, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
         type: 3}
@@ -4552,7 +4583,7 @@ PrefabInstance:
     - target: {fileID: 5966395321279497259, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
         type: 3}
       propertyPath: m_RootOrder
-      value: 31
+      value: 118
       objectReference: {fileID: 0}
     - target: {fileID: 5966395321279497259, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
         type: 3}
@@ -4714,6 +4745,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -5214,7 +5246,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 845287146}
     m_Modifications:
     - target: {fileID: 5966395321279497236, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
         type: 3}
@@ -5234,7 +5266,7 @@ PrefabInstance:
     - target: {fileID: 5966395321279497259, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 595.15
+      value: 585.25
       objectReference: {fileID: 0}
     - target: {fileID: 5966395321279497259, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
         type: 3}
@@ -5259,7 +5291,7 @@ PrefabInstance:
     - target: {fileID: 5966395321279497259, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
         type: 3}
       propertyPath: m_RootOrder
-      value: 19
+      value: 106
       objectReference: {fileID: 0}
     - target: {fileID: 5966395321279497259, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
         type: 3}
@@ -5283,7 +5315,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 845287146}
     m_Modifications:
     - target: {fileID: 5966395321279497236, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
         type: 3}
@@ -5303,7 +5335,7 @@ PrefabInstance:
     - target: {fileID: 5966395321279497259, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 685.2
+      value: 675.3
       objectReference: {fileID: 0}
     - target: {fileID: 5966395321279497259, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
         type: 3}
@@ -5328,7 +5360,7 @@ PrefabInstance:
     - target: {fileID: 5966395321279497259, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
         type: 3}
       propertyPath: m_RootOrder
-      value: 42
+      value: 129
       objectReference: {fileID: 0}
     - target: {fileID: 5966395321279497259, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
         type: 3}
@@ -5438,6 +5470,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -5610,6 +5643,7 @@ TrailRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -5803,6 +5837,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -5954,6 +5989,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -6026,6 +6062,12 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!4 &150544378 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5966395321279497259, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
+    type: 3}
+  m_PrefabInstance: {fileID: 118206451}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &150636509
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6191,7 +6233,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 845287146}
     m_Modifications:
     - target: {fileID: 3229089691094600486, guid: 6a4f7d2091b10d94a8eb17721dec981b,
         type: 3}
@@ -6211,7 +6253,7 @@ PrefabInstance:
     - target: {fileID: 3229089691094600487, guid: 6a4f7d2091b10d94a8eb17721dec981b,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 574.5
+      value: 564.6
       objectReference: {fileID: 0}
     - target: {fileID: 3229089691094600487, guid: 6a4f7d2091b10d94a8eb17721dec981b,
         type: 3}
@@ -6236,7 +6278,7 @@ PrefabInstance:
     - target: {fileID: 3229089691094600487, guid: 6a4f7d2091b10d94a8eb17721dec981b,
         type: 3}
       propertyPath: m_RootOrder
-      value: 15
+      value: 102
       objectReference: {fileID: 0}
     - target: {fileID: 3229089691094600487, guid: 6a4f7d2091b10d94a8eb17721dec981b,
         type: 3}
@@ -6420,6 +6462,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -6440,6 +6483,12 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 157481734}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &159552349 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3229089691094600487, guid: 6a4f7d2091b10d94a8eb17721dec981b,
+    type: 3}
+  m_PrefabInstance: {fileID: 717910669}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &160137761
 GameObject:
   m_ObjectHideFlags: 0
@@ -6497,6 +6546,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -6648,6 +6698,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -6805,6 +6856,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -7028,6 +7080,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -7111,6 +7164,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -7322,6 +7376,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -7507,6 +7562,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -7787,6 +7843,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -7807,6 +7864,12 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 198757657}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &200241848 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5966395321279497259, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
+    type: 3}
+  m_PrefabInstance: {fileID: 1842616528}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &200370388
 GameObject:
   m_ObjectHideFlags: 0
@@ -7864,6 +7927,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -7975,6 +8039,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -8152,6 +8217,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -8429,6 +8495,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -8931,7 +8998,7 @@ Transform:
   - {fileID: 5006512735878423463}
   - {fileID: 134241898}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &240841839
 MonoBehaviour:
@@ -9308,6 +9375,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -9635,6 +9703,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -9840,6 +9909,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -9992,6 +10062,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -10177,6 +10248,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -10435,7 +10507,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 845287146}
     m_Modifications:
     - target: {fileID: 5966395321279497236, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
         type: 3}
@@ -10455,7 +10527,7 @@ PrefabInstance:
     - target: {fileID: 5966395321279497259, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 644.68
+      value: 634.77997
       objectReference: {fileID: 0}
     - target: {fileID: 5966395321279497259, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
         type: 3}
@@ -10480,7 +10552,7 @@ PrefabInstance:
     - target: {fileID: 5966395321279497259, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
         type: 3}
       propertyPath: m_RootOrder
-      value: 30
+      value: 117
       objectReference: {fileID: 0}
     - target: {fileID: 5966395321279497259, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
         type: 3}
@@ -10590,7 +10662,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 845287146}
     m_Modifications:
     - target: {fileID: 5966395321279497236, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
         type: 3}
@@ -10610,7 +10682,7 @@ PrefabInstance:
     - target: {fileID: 5966395321279497259, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 631.17
+      value: 621.26996
       objectReference: {fileID: 0}
     - target: {fileID: 5966395321279497259, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
         type: 3}
@@ -10635,7 +10707,7 @@ PrefabInstance:
     - target: {fileID: 5966395321279497259, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
         type: 3}
       propertyPath: m_RootOrder
-      value: 27
+      value: 114
       objectReference: {fileID: 0}
     - target: {fileID: 5966395321279497259, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
         type: 3}
@@ -10936,6 +11008,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -11047,6 +11120,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -11190,6 +11264,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -11281,6 +11356,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -11592,6 +11668,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -11675,6 +11752,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -11992,6 +12070,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -12103,6 +12182,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -12303,6 +12383,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -12474,6 +12555,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -12665,6 +12747,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -12888,6 +12971,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -12965,6 +13049,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -13165,6 +13250,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -13430,6 +13516,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -13587,6 +13674,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -13789,6 +13877,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -13945,7 +14034,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 845287146}
     m_Modifications:
     - target: {fileID: 5966395321279497236, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
         type: 3}
@@ -13965,7 +14054,7 @@ PrefabInstance:
     - target: {fileID: 5966395321279497259, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 622.15
+      value: 612.25
       objectReference: {fileID: 0}
     - target: {fileID: 5966395321279497259, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
         type: 3}
@@ -13990,7 +14079,7 @@ PrefabInstance:
     - target: {fileID: 5966395321279497259, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
         type: 3}
       propertyPath: m_RootOrder
-      value: 40
+      value: 127
       objectReference: {fileID: 0}
     - target: {fileID: 5966395321279497259, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
         type: 3}
@@ -14100,6 +14189,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -14191,6 +14281,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -14296,6 +14387,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -14387,6 +14479,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -14572,6 +14665,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -14683,6 +14777,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -14943,6 +15038,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 416062863}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &416854678 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5966395321279497259, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
+    type: 3}
+  m_PrefabInstance: {fileID: 962155391}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &419544604 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3229089691094600487, guid: 6a4f7d2091b10d94a8eb17721dec981b,
@@ -15114,6 +15215,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -15365,6 +15467,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -15556,6 +15659,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -15576,6 +15680,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 436772357}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &440708916 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5966395321279497259, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
+    type: 3}
+  m_PrefabInstance: {fileID: 1351357959}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &441735187 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5966395321279497259, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
+    type: 3}
+  m_PrefabInstance: {fileID: 660841986}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &443325751
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15970,6 +16086,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -16135,6 +16252,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -16292,6 +16410,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -16515,6 +16634,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -16535,6 +16655,12 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 457406171}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &458964116 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5966395321279497259, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
+    type: 3}
+  m_PrefabInstance: {fileID: 1148035505}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &465196438
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16748,6 +16874,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -16779,7 +16906,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 845287146}
     m_Modifications:
     - target: {fileID: 5966395321279497236, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
         type: 3}
@@ -16799,7 +16926,7 @@ PrefabInstance:
     - target: {fileID: 5966395321279497259, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 581.67004
+      value: 571.77
       objectReference: {fileID: 0}
     - target: {fileID: 5966395321279497259, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
         type: 3}
@@ -16824,7 +16951,7 @@ PrefabInstance:
     - target: {fileID: 5966395321279497259, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 98
       objectReference: {fileID: 0}
     - target: {fileID: 5966395321279497259, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
         type: 3}
@@ -16906,6 +17033,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -17295,6 +17423,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -17873,6 +18002,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -17984,6 +18114,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -18061,6 +18192,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -18172,6 +18304,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -18219,7 +18352,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 507253385}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_HorizontalAxis: Horizontal
@@ -18238,7 +18371,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 507253385}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_FirstSelected: {fileID: 0}
@@ -18256,7 +18389,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &508051447
 PrefabInstance:
@@ -18688,6 +18821,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -19051,6 +19185,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -19543,6 +19678,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -19740,6 +19876,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -19829,6 +19966,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -20060,6 +20198,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -20295,6 +20434,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -20475,6 +20615,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -20566,6 +20707,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -20829,6 +20971,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -21046,6 +21189,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -21071,7 +21215,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 845287146}
     m_Modifications:
     - target: {fileID: 5966395321279497236, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
         type: 3}
@@ -21091,7 +21235,7 @@ PrefabInstance:
     - target: {fileID: 5966395321279497259, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 617.69
+      value: 607.79
       objectReference: {fileID: 0}
     - target: {fileID: 5966395321279497259, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
         type: 3}
@@ -21116,7 +21260,7 @@ PrefabInstance:
     - target: {fileID: 5966395321279497259, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
         type: 3}
       propertyPath: m_RootOrder
-      value: 24
+      value: 111
       objectReference: {fileID: 0}
     - target: {fileID: 5966395321279497259, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
         type: 3}
@@ -21340,6 +21484,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -21451,6 +21596,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -21628,6 +21774,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -21719,6 +21866,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -21904,6 +22052,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -21987,6 +22136,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -22064,6 +22214,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -22155,6 +22306,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -22266,6 +22418,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -22291,7 +22444,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 845287146}
     m_Modifications:
     - target: {fileID: 5966395321279497236, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
         type: 3}
@@ -22311,7 +22464,7 @@ PrefabInstance:
     - target: {fileID: 5966395321279497259, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 671.68
+      value: 661.77997
       objectReference: {fileID: 0}
     - target: {fileID: 5966395321279497259, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
         type: 3}
@@ -22336,7 +22489,7 @@ PrefabInstance:
     - target: {fileID: 5966395321279497259, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
         type: 3}
       propertyPath: m_RootOrder
-      value: 36
+      value: 123
       objectReference: {fileID: 0}
     - target: {fileID: 5966395321279497259, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
         type: 3}
@@ -22697,6 +22850,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -22808,6 +22962,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -22965,6 +23120,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -23116,6 +23272,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -23233,6 +23390,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -23253,6 +23411,12 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 686391926}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &686550949 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5966395321279497259, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
+    type: 3}
+  m_PrefabInstance: {fileID: 632169004}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &689951873 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3229089691094600487, guid: 6a4f7d2091b10d94a8eb17721dec981b,
@@ -23549,6 +23713,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -23674,6 +23839,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -24037,6 +24203,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -24148,6 +24315,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -24225,6 +24393,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -24336,6 +24505,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -24361,7 +24531,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 845287146}
     m_Modifications:
     - target: {fileID: 3229089691094600486, guid: 6a4f7d2091b10d94a8eb17721dec981b,
         type: 3}
@@ -24381,7 +24551,7 @@ PrefabInstance:
     - target: {fileID: 3229089691094600487, guid: 6a4f7d2091b10d94a8eb17721dec981b,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 574.5
+      value: 564.6
       objectReference: {fileID: 0}
     - target: {fileID: 3229089691094600487, guid: 6a4f7d2091b10d94a8eb17721dec981b,
         type: 3}
@@ -24406,7 +24576,7 @@ PrefabInstance:
     - target: {fileID: 3229089691094600487, guid: 6a4f7d2091b10d94a8eb17721dec981b,
         type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 3229089691094600487, guid: 6a4f7d2091b10d94a8eb17721dec981b,
         type: 3}
@@ -24549,6 +24719,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -24648,6 +24819,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3229089691094600487, guid: 6a4f7d2091b10d94a8eb17721dec981b,
     type: 3}
   m_PrefabInstance: {fileID: 719214673}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &719283450 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5966395321279497259, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
+    type: 3}
+  m_PrefabInstance: {fileID: 130387465}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &724996113
 GameObject:
@@ -24773,6 +24950,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -24864,6 +25042,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -25081,6 +25260,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -25198,6 +25378,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -25289,6 +25470,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -25460,6 +25642,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -25551,6 +25734,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -25658,6 +25842,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -25770,6 +25955,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -25847,6 +26033,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -25976,6 +26163,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -26067,6 +26255,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -26184,6 +26373,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -26209,7 +26399,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 845287146}
     m_Modifications:
     - target: {fileID: 5966395321279497236, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
         type: 3}
@@ -26229,7 +26419,7 @@ PrefabInstance:
     - target: {fileID: 5966395321279497259, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 667.18
+      value: 657.27997
       objectReference: {fileID: 0}
     - target: {fileID: 5966395321279497259, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
         type: 3}
@@ -26254,7 +26444,7 @@ PrefabInstance:
     - target: {fileID: 5966395321279497259, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
         type: 3}
       propertyPath: m_RootOrder
-      value: 35
+      value: 122
       objectReference: {fileID: 0}
     - target: {fileID: 5966395321279497259, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
         type: 3}
@@ -26396,6 +26586,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -26771,6 +26962,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -26862,6 +27054,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -26979,6 +27172,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -27301,6 +27495,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -27531,6 +27726,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -27666,6 +27862,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -27883,6 +28080,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -28217,6 +28415,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -28294,6 +28493,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -28553,6 +28753,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -28664,6 +28865,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -29092,7 +29294,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 845287146}
     m_Modifications:
     - target: {fileID: 5966395321279497236, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
         type: 3}
@@ -29112,7 +29314,7 @@ PrefabInstance:
     - target: {fileID: 5966395321279497259, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 658.2
+      value: 648.3
       objectReference: {fileID: 0}
     - target: {fileID: 5966395321279497259, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
         type: 3}
@@ -29137,7 +29339,7 @@ PrefabInstance:
     - target: {fileID: 5966395321279497259, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
         type: 3}
       propertyPath: m_RootOrder
-      value: 33
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 5966395321279497259, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
         type: 3}
@@ -29219,6 +29421,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -29308,6 +29511,7 @@ LineRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -29478,6 +29682,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -29680,6 +29885,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -29825,9 +30031,53 @@ Transform:
   - {fileID: 1097113700}
   - {fileID: 1164191412}
   - {fileID: 1302700991}
+  - {fileID: 949563895}
+  - {fileID: 915627062}
+  - {fileID: 159552349}
+  - {fileID: 848109047}
+  - {fileID: 1100558184}
+  - {fileID: 1509230486}
+  - {fileID: 1841903576}
+  - {fileID: 1623834095}
+  - {fileID: 719283450}
+  - {fileID: 94689965}
+  - {fileID: 2030182612}
+  - {fileID: 1184430110}
+  - {fileID: 440708916}
+  - {fileID: 686550949}
+  - {fileID: 2127588533}
+  - {fileID: 1417752965}
+  - {fileID: 1842572211}
+  - {fileID: 416854678}
+  - {fileID: 847275096}
+  - {fileID: 1421496179}
+  - {fileID: 150544378}
+  - {fileID: 458964116}
+  - {fileID: 1188053534}
+  - {fileID: 1674093096}
+  - {fileID: 72852345}
+  - {fileID: 441735187}
+  - {fileID: 200241848}
+  - {fileID: 1346118915}
+  - {fileID: 935478302}
+  - {fileID: 1192309389}
+  - {fileID: 1987555290}
+  - {fileID: 1036476307}
   m_Father: {fileID: 1197470096}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &847275096 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5966395321279497259, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
+    type: 3}
+  m_PrefabInstance: {fileID: 1518772954}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &848109047 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3229089691094600487, guid: 6a4f7d2091b10d94a8eb17721dec981b,
+    type: 3}
+  m_PrefabInstance: {fileID: 1682231977}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &849236318
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30192,6 +30442,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -30501,6 +30752,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -31030,6 +31282,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -31121,6 +31374,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -31198,6 +31452,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -31531,6 +31786,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1655124996}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &915627062 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3229089691094600487, guid: 6a4f7d2091b10d94a8eb17721dec981b,
+    type: 3}
+  m_PrefabInstance: {fileID: 1398691949}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &915919567
 GameObject:
   m_ObjectHideFlags: 0
@@ -31622,6 +31883,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -31727,7 +31989,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 845287146}
     m_Modifications:
     - target: {fileID: 5966395321279497236, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
         type: 3}
@@ -31747,7 +32009,7 @@ PrefabInstance:
     - target: {fileID: 5966395321279497259, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 608.67004
+      value: 598.77
       objectReference: {fileID: 0}
     - target: {fileID: 5966395321279497259, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
         type: 3}
@@ -31772,7 +32034,7 @@ PrefabInstance:
     - target: {fileID: 5966395321279497259, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
         type: 3}
       propertyPath: m_RootOrder
-      value: 22
+      value: 109
       objectReference: {fileID: 0}
     - target: {fileID: 5966395321279497259, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
         type: 3}
@@ -31882,6 +32144,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -31993,6 +32256,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3229089691094600487, guid: 6a4f7d2091b10d94a8eb17721dec981b,
     type: 3}
   m_PrefabInstance: {fileID: 932458789}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &935478302 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3229089691094600487, guid: 6a4f7d2091b10d94a8eb17721dec981b,
+    type: 3}
+  m_PrefabInstance: {fileID: 1562822187}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &937841503
 PrefabInstance:
@@ -32177,7 +32446,7 @@ Transform:
   m_Children:
   - {fileID: 1057429661}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &941335505
 PrefabInstance:
@@ -32391,6 +32660,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -32491,6 +32761,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 946171350}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &949563895 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5966395321279497259, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
+    type: 3}
+  m_PrefabInstance: {fileID: 470196376}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &949680312
 GameObject:
   m_ObjectHideFlags: 0
@@ -32582,6 +32858,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -32659,6 +32936,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -32862,6 +33140,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -32893,7 +33172,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 845287146}
     m_Modifications:
     - target: {fileID: 5966395321279497236, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
         type: 3}
@@ -32913,7 +33192,7 @@ PrefabInstance:
     - target: {fileID: 5966395321279497259, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 635.72
+      value: 625.81995
       objectReference: {fileID: 0}
     - target: {fileID: 5966395321279497259, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
         type: 3}
@@ -32938,7 +33217,7 @@ PrefabInstance:
     - target: {fileID: 5966395321279497259, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
         type: 3}
       propertyPath: m_RootOrder
-      value: 28
+      value: 115
       objectReference: {fileID: 0}
     - target: {fileID: 5966395321279497259, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
         type: 3}
@@ -33270,6 +33549,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -33461,6 +33741,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -33608,6 +33889,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -33771,6 +34053,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -33882,6 +34165,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -34148,6 +34432,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -34488,6 +34773,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -34582,6 +34868,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6a4f7d2091b10d94a8eb17721dec981b, type: 3}
+--- !u!4 &989514507 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3229089691094600487, guid: 6a4f7d2091b10d94a8eb17721dec981b,
+    type: 3}
+  m_PrefabInstance: {fileID: 1597678606}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &990732611
 GameObject:
   m_ObjectHideFlags: 0
@@ -34653,6 +34945,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -35084,6 +35377,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -35499,6 +35793,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -35726,6 +36021,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -35986,6 +36282,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1034645242}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &1036476307 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5966395321279497259, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
+    type: 3}
+  m_PrefabInstance: {fileID: 132514224}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1036554871
 GameObject:
   m_ObjectHideFlags: 0
@@ -36109,6 +36411,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -36198,6 +36501,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -36400,6 +36704,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -36517,6 +36822,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -36608,6 +36914,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -36865,6 +37172,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -37050,6 +37358,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -37241,6 +37550,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -37332,6 +37642,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -37352,6 +37663,12 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1100254059}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1100558184 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3229089691094600487, guid: 6a4f7d2091b10d94a8eb17721dec981b,
+    type: 3}
+  m_PrefabInstance: {fileID: 154729131}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1106951769 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3895014469974558308, guid: d9e43a44183dce04fabc484cd65a8c84,
@@ -37489,6 +37806,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -37780,6 +38098,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -37897,6 +38216,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -38020,6 +38340,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -38268,7 +38589,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 845287146}
     m_Modifications:
     - target: {fileID: 5966395321279497236, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
         type: 3}
@@ -38288,7 +38609,7 @@ PrefabInstance:
     - target: {fileID: 5966395321279497259, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 653.7
+      value: 643.8
       objectReference: {fileID: 0}
     - target: {fileID: 5966395321279497259, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
         type: 3}
@@ -38313,7 +38634,7 @@ PrefabInstance:
     - target: {fileID: 5966395321279497259, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
         type: 3}
       propertyPath: m_RootOrder
-      value: 32
+      value: 119
       objectReference: {fileID: 0}
     - target: {fileID: 5966395321279497259, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
         type: 3}
@@ -38497,6 +38818,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -38795,6 +39117,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -38872,6 +39195,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -38963,6 +39287,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -39234,6 +39559,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -39311,6 +39637,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -39524,6 +39851,7 @@ ParticleSystemRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -44229,7 +44557,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!1001 &1179820564
 PrefabInstance:
@@ -44539,6 +44867,24 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1183446112}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &1184430110 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5966395321279497259, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
+    type: 3}
+  m_PrefabInstance: {fileID: 920760919}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1188053534 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5966395321279497259, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
+    type: 3}
+  m_PrefabInstance: {fileID: 828823835}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1192309389 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5966395321279497259, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
+    type: 3}
+  m_PrefabInstance: {fileID: 393552968}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1193832589
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -44662,8 +45008,9 @@ Transform:
   - {fileID: 98849389}
   - {fileID: 889916415}
   - {fileID: 845287146}
+  - {fileID: 989514507}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1199605101
 GameObject:
@@ -44736,6 +45083,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -44879,6 +45227,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -45136,6 +45485,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -45247,6 +45597,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -45364,6 +45715,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -45441,6 +45793,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -45532,6 +45885,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -45623,6 +45977,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -45734,6 +46089,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -45811,6 +46167,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -45922,6 +46279,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -46065,6 +46423,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -46176,6 +46535,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -46319,6 +46679,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -46435,6 +46796,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -46786,6 +47148,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -46897,6 +47260,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -47008,6 +47372,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -47363,6 +47728,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -47454,6 +47820,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -47643,6 +48010,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -47828,6 +48196,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -48248,6 +48617,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -48285,7 +48655,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 845287146}
     m_Modifications:
     - target: {fileID: 5966395321279497236, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
         type: 3}
@@ -48305,7 +48675,7 @@ PrefabInstance:
     - target: {fileID: 5966395321279497259, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 626.65
+      value: 616.75
       objectReference: {fileID: 0}
     - target: {fileID: 5966395321279497259, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
         type: 3}
@@ -48330,7 +48700,7 @@ PrefabInstance:
     - target: {fileID: 5966395321279497259, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
         type: 3}
       propertyPath: m_RootOrder
-      value: 26
+      value: 113
       objectReference: {fileID: 0}
     - target: {fileID: 5966395321279497259, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
         type: 3}
@@ -48383,9 +48753,9 @@ Transform:
   - {fileID: 1377903950}
   - {fileID: 2089570650}
   - {fileID: 128488386}
-  - {fileID: 1137225993}
-  - {fileID: 1909293744}
   - {fileID: 236446463}
+  - {fileID: 1909293744}
+  - {fileID: 1137225993}
   - {fileID: 13722226}
   - {fileID: 1826975599}
   - {fileID: 546641776}
@@ -48448,6 +48818,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -48674,6 +49045,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -48905,6 +49277,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -49048,6 +49421,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -49484,6 +49858,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -49912,6 +50287,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6a4f7d2091b10d94a8eb17721dec981b, type: 3}
+--- !u!4 &1346118915 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3229089691094600487, guid: 6a4f7d2091b10d94a8eb17721dec981b,
+    type: 3}
+  m_PrefabInstance: {fileID: 1897516459}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1351027580 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3229089691094600487, guid: 6a4f7d2091b10d94a8eb17721dec981b,
@@ -50009,6 +50390,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -50034,7 +50416,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 845287146}
     m_Modifications:
     - target: {fileID: 5966395321279497236, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
         type: 3}
@@ -50054,7 +50436,7 @@ PrefabInstance:
     - target: {fileID: 5966395321279497259, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 613.17004
+      value: 603.27
       objectReference: {fileID: 0}
     - target: {fileID: 5966395321279497259, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
         type: 3}
@@ -50079,7 +50461,7 @@ PrefabInstance:
     - target: {fileID: 5966395321279497259, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
         type: 3}
       propertyPath: m_RootOrder
-      value: 23
+      value: 110
       objectReference: {fileID: 0}
     - target: {fileID: 5966395321279497259, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
         type: 3}
@@ -50189,6 +50571,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -50286,6 +50669,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -50718,6 +51102,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -50829,6 +51214,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -50885,7 +51271,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 845287146}
     m_Modifications:
     - target: {fileID: 5966395321279497236, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
         type: 3}
@@ -50905,7 +51291,7 @@ PrefabInstance:
     - target: {fileID: 5966395321279497259, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 586.17004
+      value: 576.27
       objectReference: {fileID: 0}
     - target: {fileID: 5966395321279497259, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
         type: 3}
@@ -50930,7 +51316,7 @@ PrefabInstance:
     - target: {fileID: 5966395321279497259, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
         type: 3}
       propertyPath: m_RootOrder
-      value: 17
+      value: 104
       objectReference: {fileID: 0}
     - target: {fileID: 5966395321279497259, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
         type: 3}
@@ -51485,6 +51871,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -51735,6 +52122,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -51848,7 +52236,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 845287146}
     m_Modifications:
     - target: {fileID: 3229089691094600486, guid: 6a4f7d2091b10d94a8eb17721dec981b,
         type: 3}
@@ -51868,7 +52256,7 @@ PrefabInstance:
     - target: {fileID: 3229089691094600487, guid: 6a4f7d2091b10d94a8eb17721dec981b,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 571.45917
+      value: 561.55914
       objectReference: {fileID: 0}
     - target: {fileID: 3229089691094600487, guid: 6a4f7d2091b10d94a8eb17721dec981b,
         type: 3}
@@ -51893,7 +52281,7 @@ PrefabInstance:
     - target: {fileID: 3229089691094600487, guid: 6a4f7d2091b10d94a8eb17721dec981b,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 99
       objectReference: {fileID: 0}
     - target: {fileID: 3229089691094600487, guid: 6a4f7d2091b10d94a8eb17721dec981b,
         type: 3}
@@ -51997,6 +52385,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -52080,6 +52469,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -52316,6 +52706,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e609057cc73cb842ba50314fc236eb4, type: 3}
+--- !u!4 &1417752965 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5966395321279497259, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
+    type: 3}
+  m_PrefabInstance: {fileID: 1301518468}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1421496179 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5966395321279497259, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
+    type: 3}
+  m_PrefabInstance: {fileID: 278736397}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1421584616
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -52986,6 +53388,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -53097,6 +53500,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -53274,6 +53678,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -53385,6 +53790,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -53556,6 +53962,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -53629,7 +54036,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 845287146}
     m_Modifications:
     - target: {fileID: 5966395321279497236, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
         type: 3}
@@ -53649,7 +54056,7 @@ PrefabInstance:
     - target: {fileID: 5966395321279497259, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 599.65
+      value: 589.75
       objectReference: {fileID: 0}
     - target: {fileID: 5966395321279497259, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
         type: 3}
@@ -53674,7 +54081,7 @@ PrefabInstance:
     - target: {fileID: 5966395321279497259, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
         type: 3}
       propertyPath: m_RootOrder
-      value: 20
+      value: 107
       objectReference: {fileID: 0}
     - target: {fileID: 5966395321279497259, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
         type: 3}
@@ -53910,6 +54317,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -54033,6 +54441,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -54110,6 +54519,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -54532,6 +54942,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 764141796}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &1509230486 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3229089691094600487, guid: 6a4f7d2091b10d94a8eb17721dec981b,
+    type: 3}
+  m_PrefabInstance: {fileID: 1959575073}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1509401190
 GameObject:
   m_ObjectHideFlags: 0
@@ -54623,6 +55039,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -54734,6 +55151,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -54845,6 +55263,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -55018,6 +55437,7 @@ ParticleSystemRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -59790,7 +60210,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 845287146}
     m_Modifications:
     - target: {fileID: 5966395321279497236, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
         type: 3}
@@ -59810,7 +60230,7 @@ PrefabInstance:
     - target: {fileID: 5966395321279497259, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 640.18
+      value: 630.27997
       objectReference: {fileID: 0}
     - target: {fileID: 5966395321279497259, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
         type: 3}
@@ -59835,7 +60255,7 @@ PrefabInstance:
     - target: {fileID: 5966395321279497259, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
         type: 3}
       propertyPath: m_RootOrder
-      value: 29
+      value: 116
       objectReference: {fileID: 0}
     - target: {fileID: 5966395321279497259, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
         type: 3}
@@ -60025,6 +60445,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -60273,6 +60694,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -60364,6 +60786,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -60651,6 +61074,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -60843,6 +61267,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -60920,6 +61345,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -60945,7 +61371,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 845287146}
     m_Modifications:
     - target: {fileID: 5966395321279497236, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
         type: 3}
@@ -60965,7 +61391,7 @@ PrefabInstance:
     - target: {fileID: 5966395321279497259, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 604.17
+      value: 594.26996
       objectReference: {fileID: 0}
     - target: {fileID: 5966395321279497259, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
         type: 3}
@@ -60990,7 +61416,7 @@ PrefabInstance:
     - target: {fileID: 5966395321279497259, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
         type: 3}
       propertyPath: m_RootOrder
-      value: 21
+      value: 108
       objectReference: {fileID: 0}
     - target: {fileID: 5966395321279497259, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
         type: 3}
@@ -61152,6 +61578,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -61295,6 +61722,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -61444,6 +61872,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -61469,7 +61898,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 845287146}
     m_Modifications:
     - target: {fileID: 5966395321279497236, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
         type: 3}
@@ -61489,7 +61918,7 @@ PrefabInstance:
     - target: {fileID: 5966395321279497259, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 622.15
+      value: 612.25
       objectReference: {fileID: 0}
     - target: {fileID: 5966395321279497259, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
         type: 3}
@@ -61514,7 +61943,7 @@ PrefabInstance:
     - target: {fileID: 5966395321279497259, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
         type: 3}
       propertyPath: m_RootOrder
-      value: 25
+      value: 112
       objectReference: {fileID: 0}
     - target: {fileID: 5966395321279497259, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
         type: 3}
@@ -61538,7 +61967,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 845287146}
     m_Modifications:
     - target: {fileID: 3229089691094600486, guid: 6a4f7d2091b10d94a8eb17721dec981b,
         type: 3}
@@ -61558,7 +61987,7 @@ PrefabInstance:
     - target: {fileID: 3229089691094600487, guid: 6a4f7d2091b10d94a8eb17721dec981b,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 609.18
+      value: 599.27997
       objectReference: {fileID: 0}
     - target: {fileID: 3229089691094600487, guid: 6a4f7d2091b10d94a8eb17721dec981b,
         type: 3}
@@ -61583,7 +62012,7 @@ PrefabInstance:
     - target: {fileID: 3229089691094600487, guid: 6a4f7d2091b10d94a8eb17721dec981b,
         type: 3}
       propertyPath: m_RootOrder
-      value: 39
+      value: 126
       objectReference: {fileID: 0}
     - target: {fileID: 3229089691094600487, guid: 6a4f7d2091b10d94a8eb17721dec981b,
         type: 3}
@@ -61693,6 +62122,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -61798,6 +62228,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -61909,6 +62340,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -62020,6 +62452,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -62192,6 +62625,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -62383,6 +62817,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -62466,6 +62901,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -62645,7 +63081,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1197470096}
     m_Modifications:
     - target: {fileID: 3229089691094600486, guid: 6a4f7d2091b10d94a8eb17721dec981b,
         type: 3}
@@ -62665,7 +63101,7 @@ PrefabInstance:
     - target: {fileID: 3229089691094600487, guid: 6a4f7d2091b10d94a8eb17721dec981b,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 571.45917
+      value: 561.55914
       objectReference: {fileID: 0}
     - target: {fileID: 3229089691094600487, guid: 6a4f7d2091b10d94a8eb17721dec981b,
         type: 3}
@@ -62690,7 +63126,7 @@ PrefabInstance:
     - target: {fileID: 3229089691094600487, guid: 6a4f7d2091b10d94a8eb17721dec981b,
         type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3229089691094600487, guid: 6a4f7d2091b10d94a8eb17721dec981b,
         type: 3}
@@ -62880,6 +63316,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -62971,6 +63408,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -63264,6 +63702,7 @@ ParticleSystemRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -67978,7 +68417,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!1001 &1618861442
 PrefabInstance:
@@ -68362,6 +68801,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -68382,6 +68822,12 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1623829169}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1623834095 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5966395321279497259, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
+    type: 3}
+  m_PrefabInstance: {fileID: 2144589089}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1626616820 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3229089691094600487, guid: 6a4f7d2091b10d94a8eb17721dec981b,
@@ -69326,6 +69772,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -69437,6 +69884,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -69552,12 +70000,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 892973387}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &1674093096 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5966395321279497259, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
+    type: 3}
+  m_PrefabInstance: {fileID: 3865250}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1682231977
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 845287146}
     m_Modifications:
     - target: {fileID: 3229089691094600486, guid: 6a4f7d2091b10d94a8eb17721dec981b,
         type: 3}
@@ -69577,7 +70031,7 @@ PrefabInstance:
     - target: {fileID: 3229089691094600487, guid: 6a4f7d2091b10d94a8eb17721dec981b,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 577.5
+      value: 567.6
       objectReference: {fileID: 0}
     - target: {fileID: 3229089691094600487, guid: 6a4f7d2091b10d94a8eb17721dec981b,
         type: 3}
@@ -69602,7 +70056,7 @@ PrefabInstance:
     - target: {fileID: 3229089691094600487, guid: 6a4f7d2091b10d94a8eb17721dec981b,
         type: 3}
       propertyPath: m_RootOrder
-      value: 14
+      value: 101
       objectReference: {fileID: 0}
     - target: {fileID: 3229089691094600487, guid: 6a4f7d2091b10d94a8eb17721dec981b,
         type: 3}
@@ -69785,7 +70239,7 @@ RectTransform:
   m_Children:
   - {fileID: 668452273}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 51.858, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -70232,6 +70686,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -70638,6 +71093,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -70944,6 +71400,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -71129,6 +71586,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -71240,6 +71698,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -71357,6 +71816,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -71500,6 +71960,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -71685,6 +72146,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -71710,7 +72172,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 845287146}
     m_Modifications:
     - target: {fileID: 5966395321279497236, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
         type: 3}
@@ -71730,7 +72192,7 @@ PrefabInstance:
     - target: {fileID: 5966395321279497259, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 742.3
+      value: 732.39996
       objectReference: {fileID: 0}
     - target: {fileID: 5966395321279497259, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
         type: 3}
@@ -71755,7 +72217,7 @@ PrefabInstance:
     - target: {fileID: 5966395321279497259, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
         type: 3}
       propertyPath: m_RootOrder
-      value: 41
+      value: 128
       objectReference: {fileID: 0}
     - target: {fileID: 5966395321279497259, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
         type: 3}
@@ -72716,6 +73178,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -73542,6 +74005,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -73639,6 +74103,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -74041,12 +74506,24 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1305256392}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &1841903576 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5966395321279497259, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
+    type: 3}
+  m_PrefabInstance: {fileID: 1379480785}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1842572211 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5966395321279497259, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
+    type: 3}
+  m_PrefabInstance: {fileID: 289513497}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1842616528
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 845287146}
     m_Modifications:
     - target: {fileID: 5966395321279497236, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
         type: 3}
@@ -74066,7 +74543,7 @@ PrefabInstance:
     - target: {fileID: 5966395321279497259, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 676.19995
+      value: 666.2999
       objectReference: {fileID: 0}
     - target: {fileID: 5966395321279497259, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
         type: 3}
@@ -74091,7 +74568,7 @@ PrefabInstance:
     - target: {fileID: 5966395321279497259, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
         type: 3}
       propertyPath: m_RootOrder
-      value: 37
+      value: 124
       objectReference: {fileID: 0}
     - target: {fileID: 5966395321279497259, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
         type: 3}
@@ -74167,6 +74644,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -74258,6 +74736,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -74452,6 +74931,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -74599,6 +75079,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -74964,6 +75445,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -75326,6 +75808,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -75671,6 +76154,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -75945,7 +76429,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 845287146}
     m_Modifications:
     - target: {fileID: 3229089691094600486, guid: 6a4f7d2091b10d94a8eb17721dec981b,
         type: 3}
@@ -75965,7 +76449,7 @@ PrefabInstance:
     - target: {fileID: 3229089691094600487, guid: 6a4f7d2091b10d94a8eb17721dec981b,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 595.18
+      value: 585.27997
       objectReference: {fileID: 0}
     - target: {fileID: 3229089691094600487, guid: 6a4f7d2091b10d94a8eb17721dec981b,
         type: 3}
@@ -75990,7 +76474,7 @@ PrefabInstance:
     - target: {fileID: 3229089691094600487, guid: 6a4f7d2091b10d94a8eb17721dec981b,
         type: 3}
       propertyPath: m_RootOrder
-      value: 38
+      value: 125
       objectReference: {fileID: 0}
     - target: {fileID: 3229089691094600487, guid: 6a4f7d2091b10d94a8eb17721dec981b,
         type: 3}
@@ -76214,7 +76698,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1909293744 stripped
 Transform:
@@ -76654,6 +77138,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -76983,6 +77468,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -77193,6 +77679,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -77304,6 +77791,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -77645,6 +78133,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -77976,6 +78465,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -78001,7 +78491,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 845287146}
     m_Modifications:
     - target: {fileID: 3229089691094600486, guid: 6a4f7d2091b10d94a8eb17721dec981b,
         type: 3}
@@ -78021,7 +78511,7 @@ PrefabInstance:
     - target: {fileID: 3229089691094600487, guid: 6a4f7d2091b10d94a8eb17721dec981b,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 577.5
+      value: 567.6
       objectReference: {fileID: 0}
     - target: {fileID: 3229089691094600487, guid: 6a4f7d2091b10d94a8eb17721dec981b,
         type: 3}
@@ -78046,7 +78536,7 @@ PrefabInstance:
     - target: {fileID: 3229089691094600487, guid: 6a4f7d2091b10d94a8eb17721dec981b,
         type: 3}
       propertyPath: m_RootOrder
-      value: 16
+      value: 103
       objectReference: {fileID: 0}
     - target: {fileID: 3229089691094600487, guid: 6a4f7d2091b10d94a8eb17721dec981b,
         type: 3}
@@ -78249,6 +78739,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -78349,6 +78840,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6a4f7d2091b10d94a8eb17721dec981b, type: 3}
+--- !u!4 &1987555290 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5966395321279497259, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
+    type: 3}
+  m_PrefabInstance: {fileID: 1740205057}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1989481494 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3229089691094600487, guid: 6a4f7d2091b10d94a8eb17721dec981b,
@@ -78612,6 +79109,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -78824,6 +79322,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -79094,6 +79593,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -79205,6 +79705,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -79304,6 +79805,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3229089691094600487, guid: 6a4f7d2091b10d94a8eb17721dec981b,
     type: 3}
   m_PrefabInstance: {fileID: 221921154}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &2030182612 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5966395321279497259, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
+    type: 3}
+  m_PrefabInstance: {fileID: 1544407439}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &2033298338 stripped
 Transform:
@@ -79434,6 +79941,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -79511,6 +80019,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -79812,6 +80321,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -80451,7 +80961,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2082688132}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 1301386320, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_IgnoreReversedGraphics: 1
@@ -80468,7 +80978,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2082688132}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_UiScaleMode: 0
@@ -80515,7 +81025,7 @@ RectTransform:
   m_Children:
   - {fileID: 2129572833}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -80779,6 +81289,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -80890,6 +81401,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -81069,6 +81581,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -81160,6 +81673,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -81317,6 +81831,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -81434,6 +81949,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -81545,6 +82061,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -81879,6 +82396,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -82059,6 +82577,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -82280,6 +82799,12 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 3011258302553344702, guid: 45dc6d9dc6e43fc49959c759bff58183, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 45dc6d9dc6e43fc49959c759bff58183, type: 3}
+--- !u!4 &2127588533 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5966395321279497259, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
+    type: 3}
+  m_PrefabInstance: {fileID: 1561823477}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2128808923
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -82365,6 +82890,7 @@ GameObject:
   - component: {fileID: 2129572833}
   - component: {fileID: 2129572835}
   - component: {fileID: 2129572834}
+  - component: {fileID: 2129572836}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -82386,10 +82912,10 @@ RectTransform:
   m_Father: {fileID: 2082688136}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 391.9, y: 176.8}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchorMin: {x: 0.7978089, y: 0.79625934}
+  m_AnchorMax: {x: 1, y: 0.8951976}
+  m_AnchoredPosition: {x: 33, y: 3}
+  m_SizeDelta: {x: 50, y: -2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2129572834
 MonoBehaviour:
@@ -82400,7 +82926,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2129572832}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
@@ -82409,7 +82935,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, Unity.ugui,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 87c316b602156405d92e616621658222, type: 3}
@@ -82433,6 +82959,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2129572832}
   m_CullTransparentMesh: 0
+--- !u!114 &2129572836
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2129572832}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67172ea270acd9046a674e293a1a7829, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  time: 0
 --- !u!4 &2132730378 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3229089691094600487, guid: 6a4f7d2091b10d94a8eb17721dec981b,
@@ -82689,7 +83228,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 845287146}
     m_Modifications:
     - target: {fileID: 5966395321279497236, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
         type: 3}
@@ -82709,7 +83248,7 @@ PrefabInstance:
     - target: {fileID: 5966395321279497259, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 590.69
+      value: 580.79
       objectReference: {fileID: 0}
     - target: {fileID: 5966395321279497259, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
         type: 3}
@@ -82734,7 +83273,7 @@ PrefabInstance:
     - target: {fileID: 5966395321279497259, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
         type: 3}
       propertyPath: m_RootOrder
-      value: 18
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 5966395321279497259, guid: a5bf5a3cbde37af46816c63a3c9ebd0c,
         type: 3}
@@ -82810,6 +83349,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -84373,6 +84913,7 @@ SkinnedMeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -85343,6 +85884,7 @@ SkinnedMeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0

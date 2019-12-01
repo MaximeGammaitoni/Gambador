@@ -1,0 +1,301 @@
+Retro Look Pro v2.0 Manual. 
+
+
+THANK YOU
+
+Thank you for purchasing Retro Look Pro - you've made my day! Take your time to play with it, but
+please take a moment, when you're ready to return to store and add a short Review or rating on
+the product page - taking just a couple of minutes to help with this will be greatly appreciated!
+Your review will help others make informed decisions and help to support me in the development! "https://assetstore.unity.com/packages/vfx/shaders/fullscreen-camera-effects/retro-look-133193"
+
+///
+[Intro]
+
+Retro Look Pro is a Post processing effect. It emulates screen bleeding , artefacts , tape noise , interlacing, shake, glitches and other effects.
+It is the best and complete solution for retro like games, 80's/90's/Retro/VHS/Glitch/TV look, security cameras or robotic eyes.
+///
+
+
+///
+[SRP support]
+
+For now Retro Look Pro fully supports Lightweight Render Pipeline.
+
+HD Render Pipeline support will be as soon as Pipeline itself will be out of preview.
+
+///
+
+
+
+[Setup NEW Effects fot Post processing stack v2!]
+
+To use new effects collection make sure that you installed "Post processing" package from package manager (Window/Package Manager) !
+Import "Retro Look Pro PP2 effects" from "Assets/LimitlessUnityDevelopment/RetroLookPro" folder.
+
+to setup Post processing stack v2 use this instructions https://docs.unity3d.com/Packages/com.unity.postprocessing@2.1/manual/Quick-start.html
+
+In post process volume/profile click Add Effect/Retro Look Pro/"needed effect".
+
+IMPORTANT NOTE : To use presets please open "\Assets\LimitlessUnityDevelopment\RetroLookPro\Resources\ColormapPresets.unitypackage" and import it. Then fill RetroLookProColorPaletePresetsList\presetslist with all presets from "\Assets\LimitlessUnityDevelopment\RetroLookPro\Resources\Colormap Presets".
+///
+
+[Legacy effects Setup]
+
+Add Retro Look Pro or Post Retro Look Pro component to your camera. Create new RetroLookPro preset (Create/RetroLookPro/New preset). Insert preset in Retro Look Pro component attached to your camera. Adjust parameters. Have fun!
+
+Retro Look Pro component uses OnRender method.It gives less perfomance then post method, lets you use custom texture.
+
+Post Retro Look Pro uses postRender method.It Gives you extra perfomance in some cases, but have no ability to use custom texture, doesn't support HDR and MSAA and uses Forward rendering path only.
+
+
+///					
+
+[Retro Look Pro (Legacy)]
+
+Development mode - All changes made in selected preset will be applied and saved instantly in Game mode. If you want to access variables from your scripts uncheck this option.
+
+Reference Scr - Assign needed Retro Look Pro preset(ScriptableObject).
+
+To create new Preset - Create/Retro Look Pro/New Preset.
+						
+///
+
+[RetroLookPro preset Parameters (Legacy)]
+
+1. TV mode
+	Noise Texture 
+	take one of the "Noise Textures" from noise textures folder.
+
+	Texture Intensity 
+	parameter to make the noise texture visibility
+
+	Vertical Offset
+	vertical alignment distortion.
+
+	Offset Color 
+	changes color alignment.
+
+	Offset Distortion
+	changes VHS's ripple distortion effect amount.
+
+	Scan
+	enables scan lines, adjust line width with the "Adjust Lines" and change the color from below.
+
+	Resolution
+	changes TV effect's last resolution
+
+
+2. Bleed
+	Vertical Resolution (Vertical Quantization)
+	The picture will be quantized vertically by lines. You can choose the amount of lines:
+	"FullScreen" - no quantization
+	"240 " - 240 Lines per height
+	"480 " - 480 Lines per height
+	"Custom" - You can set the number of Lines in "Lines Per Height" field
+	 
+	Bleed Mode
+	You can choose between these modes: "Old Three Phase", "Three Phase", "Two Phase" (works slower) and "Custom Curve". These modes emulate different screen bleeding curves. 
+
+	"Custom Curve" Bleed Mode allows you to build your own bleeding curve. For easier understanding of this effect you can turn on "Debug Bleed Curve".
+	"Curve Y", "Curve I", "Curve Q" - play with these curves to build the fading curve for each of channels. 
+	"I and Q Sync" - in case if you want the same curve for I and Q channels.
+	"Bleed Length" - This parameter changes the length of the curve. Big values cause slow performance. Try to use as small value as possible. Default is 21. You can always use "Bleed Stretch" slider to stretch the curve. It doesn't look that nice all the time but it's very cheap.
+
+	Bleed Stretch
+	Makes bleeding curve longer or shorter by stretching the it. 
+
+3. Fisheye
+	Emulates a real screen by "bending" the corners of the image and making it look like if it would be put thru a wide-angle lens.
+	"Bend" - adjust fisheye amount
+
+4. Vignette
+	Emulates vignette effect.
+	"Amount" - Adjust vignette amount.
+	"Pulse Speed" - change speed how vignette pulsates
+
+5. Noise 
+	Different kinds of noises.
+
+	a. Vertical Resolution (Noise Vertical Quantization)
+	The noise vertical quantization. 
+	"Global" - choose this to inherit quantization from the CRT Vertical Resolution.
+	"Custom" - if you want to use custom vertical resolution for noise which is different from Vertical Resolution. Set value in "Lines Per Height" field. It should be less than  bleed Vertical resolution.
+
+	b. Noise signal processing
+	If you want to quantize noise by width then adjust this value.
+
+	c. Granularity
+	This is a simple background noise. 
+	"Alpha" - Adjusts transparency of background noise.
+
+	d. Signal Noise
+	Emulates signal noise. Changes the colors. 
+	"Amount" - Adjusts amount of noise.
+	"Power" - Adjusts density of noise.
+
+	e. Line Noise
+	Emulates noise in the analog video signal and VHS cassettes. Noise lines popping up randomly within the screen.
+	"Amount" - Adjusts transparency.
+	"Speed" - Adjusts speed.
+
+	f. Tape Noise
+	Emulates noise which you can find on old VHS cassettes. Noise lines floating down the screen.
+	"Amount" - Adjusts noise cutoff.
+	"Speed" - Adjusts speed.
+	"Alpha" - Adjusts transparency.
+
+
+6. Shake Effect
+Video or image shake occurs when the horizontal lines of video image frames are randomly displaced due to the corruption of synchronization signals or electromagnetic interference during video transmission.
+
+	a. Show lines 
+	Draws the black lines in between the screenlines.
+	"Width" - Adjusts the width of the scanlines.
+
+	b. Floating Lines
+	After the screen was quantized vertically it consist of the horizontal lines which will float down the screen if this option is on. It works the best on the low resolution. 
+
+	c. Stretch Noise
+	Looks like if some of the screen lines were stretched and floating up and down the screen.
+
+	d. Jitter Horizontal
+	Emulates interlacing jitter.
+	"Amount" - Adjusts the amount.
+
+	e. Jitter Vertical
+	Emulates analog video signal and jitter. Adds a bit of shifting.
+	"Amount" - Adjusts transparency.
+	"Speed" - Adjusts speed.
+
+	f. Twitch Horizontal
+	Shifts/displaces the image horizontally sometimes.
+	"Frequency" - Adjusts how often.
+
+	g. Twitch Vertical
+	Shakes/Shifts screen horizontally sometimes. The images "jumps" or "falls" vertically.
+	"Frequency" - Adjusts how often.
+
+7. Picture correction
+
+	a. Shift colors
+	"Shift Y", "Shift I", "Shift Q" - use these to tweak/shift the values.
+
+	b. Permanent Adjustment
+	"Adjust Y", "Adjust I", "Adjust Q" - Use these to make a permanent adjustment.
+
+	c. Gamma Correction
+	"Gamma Correction" - use this to balance the gamma(brightness) of the signal.
+ 
+8. Artefacts
+For easier understanding of this effect you can turn on "Render Artefacts Only". Then you will see only the artefacts. It's better to adjust it that way.
+
+"Input Cutoff" - Adjusting brightness threshold of input.
+"Input Amount" - Amplifies the input amount after cutoff. 
+"Fade" - Adjusts how fast the trail fades.
+
+9. Custom Texture
+You can use custom texture or a sprite if you want it to be affected by the effect. To use sprite, insert needed sprite in edit mode in sprite field and then go to play mode and adjust other parameters.
+
+10. Unscaled Time.
+	When you are pausing the game using Time.timeScale = 0 (or Application.timeScale = 0) ,it stops shader timer and it's animation. If you still need shader to run, while this sort of pause you can use "unscaled time" feature. The shader will keep running even when your Time.timeScale == 0. It will use Time.unscaledTime instead of Time.time.
+	
+11. Bottom Noise.
+Allows you to enable bottom noise and bottom stretch effects.
+
+12. Color Palette
+
+IMPORTANT NOTE : To use presets please open "\Assets\LimitlessUnityDevelopment\RetroLookPro\Resources\ColormapPresets.unitypackage" and import it. Then fill RetroLookProColorPaletePresetsList\presetslist with all presets from "\Assets\LimitlessUnityDevelopment\RetroLookPro\Resources\Colormap Presets".
+
+31 pre-computed colormap presets that reduces the number of colors to up to 64 specific colors and can also lower the resolution to any width and height, creating advanced posterization-like effect. 
+
+Resolution Mode � Constant Resolution or Constant Pixel Size.
+Resolution � X = horizontal resolution, Y = vertical resolution. (Only available if Resolution Mode is Constant Resolution.)
+Pixel Size � The size of the pixels in the low-res image. (Only available if Resolution Mode is Constant Pixel Size.)
+Dither � Color dithering amount.
+Opacity � The alpha of the colorization effect.
+
+Setting a constant resolution will make the pixels bigger if the window size increases, while setting a constant pixel size will increase the resolution.
+
+///
+If you want to reduce package size , open RetroLookProColorPaletePresetsList.asset ("\Assets\LimitlessUnityDevelopment\RetroLookPro\Resources") and remove unnecessary items from the list. Then remove unneeded colormap presets from  "\Assets\LimitlessUnityDevelopment\RetroLookPro\Resources\Colormap Presets".
+
+///
+
+13. Glitch Effects:
+
+a) Glitch1 - periodic digital disturbances.
+
+b) Glitch2 - digital image block damage.
+
+c) Glitch3 - interference.
+
+14. Old film filters:
+
+a) Negative:
+Luminosity - effect brightness.
+Grey Vignette - simple vignette.
+Negative - negative amount.
+
+b) Old film:
+Burn 
+Image cut 
+Contrast 
+Fade 
+FPS 
+
+15. Glitch Effets:
+
+a) Glitch1 - periodic digital disturbances.
+
+b) Glitch2 - digital image block damage.
+///
+
+
+16. Negative
+- Luminosity 
+- Grey Vignette
+- Negative  
+ 
+
+[Manual adjustment(Legacy)]
+
+To adjust variables through your scripts uncheck "Development mode" on RetroLookPro component. 
+
+In your script:
+
+1. Create "Preset yourPreset;"  variable in your script.
+2. Reference "yourPreset" to "tempPreset" from "RetroLookPro/RetroLookProPost" component.
+3. Don't forget to disable "developmentMode" to access variables.
+4. Now you have access to change variables instantly from your script.
+
+(Legacy) Online API - https://github.com/LimitlessDevelopment/Retro-Look-Pro/wiki/Retro-Look-Pro-API
+
+///
+
+[Manipulating effects variables from PP2 version of Retro look pro]
+
+https://docs.unity3d.com/Packages/com.unity.postprocessing@2.0/manual/Manipulating-the-Stack.html
+
+///
+
+[Contact]
+///
+
+If you want to leave a feedback or ask for new feature, use Asset related forum thread.
+https://forum.unity.com/threads/released-retro-look.583285/
+
+If you run into any issues or have questions, please do not hesitate to reach out ! I will do my best to respond as soon as I can.
+
+Contact email: limitlessunitydevelopment@gmail.com
+
+Please keep in mind that I’m in the UTC+5 timezone and usually reserve weekends for personal time.
+///
+
+Credits: 
+
+used Asset:
+Noise textures :
+https://www.deviantart.com/hxwlett/art/01-TEXTURES-PACK-VHS-601861083
+https://www.deviantart.com/xpegasvs/art/Pack-VHS-Vol-01-520737993
+https://www.deviantart.com/natieditions00/art/-VHS-TEXTURES-5--543052599
+Shader Calibration Scene - https://assetstore.unity.com/packages/essentials/tutorial-projects/shader-calibration-scene-25422

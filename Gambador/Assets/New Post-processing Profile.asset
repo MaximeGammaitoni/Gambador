@@ -1,5 +1,36 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8738109092966517704
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90b057d5f211e4eb09d1d36b67ca2be3, type: 3}
+  m_Name: RLProOldFilm
+  m_EditorClassIdentifier: 
+  active: 1
+  enabled:
+    overrideState: 1
+    value: 1
+  fps:
+    overrideState: 1
+    value: 1
+  contrast:
+    overrideState: 1
+    value: 1
+  burn:
+    overrideState: 1
+    value: 0.88
+  sceneCut:
+    overrideState: 1
+    value: 0.88
+  fade:
+    overrideState: 1
+    value: 0.88
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15,6 +46,7 @@ MonoBehaviour:
   settings:
   - {fileID: 5755482809540227050}
   - {fileID: 7424162812924600385}
+  - {fileID: -8738109092966517704}
 --- !u!114 &5755482809540227050
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -32,14 +64,14 @@ MonoBehaviour:
     overrideState: 1
     value: 1
   gradingMode:
-    overrideState: 0
+    overrideState: 1
     value: 1
   externalLut:
     overrideState: 0
     value: {fileID: 0}
     defaultState: 1
   tonemapper:
-    overrideState: 0
+    overrideState: 1
     value: 0
   toneCurveToeStrength:
     overrideState: 0
@@ -67,10 +99,10 @@ MonoBehaviour:
     overrideState: 0
     value: 1
   temperature:
-    overrideState: 0
-    value: 0
+    overrideState: 1
+    value: 3
   tint:
-    overrideState: 0
+    overrideState: 1
     value: -22
   colorFilter:
     overrideState: 0
@@ -1338,7 +1370,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6050e2d5de785ce4d931e4dbdbf2d755, type: 3}
   m_Name: ChromaticAberration
   m_EditorClassIdentifier: 
-  active: 0
+  active: 1
   enabled:
     overrideState: 1
     value: 1

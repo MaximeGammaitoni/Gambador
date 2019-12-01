@@ -1,0 +1,82 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 314871bae2d375c4c8499e8814ed308f, type: 3}
+  m_Name: Readme
+  m_EditorClassIdentifier: 
+  icon: {fileID: 2800000, guid: bc241083c52ca464d9afcfa35995933d, type: 3}
+  title: 
+  sections:
+  - heading: Review
+    text: Please take a moment, when you're ready to return to store and add a short
+      Review or rating on the product page - taking just a couple of minutes to help
+      with this will be greatly appreciated! Your review will help others make informed
+      decisions and help to support us in the development of quality assets for Unity!
+    linkText: Rate
+    url: https://assetstore.unity.com/packages/tools/particles-effects/retro-look-133193
+    extraImages: 1
+    foldout: 0
+    isButton: 1
+    isLink: 0
+    Headericon: {fileID: 2800000, guid: 6733b3c38a5155f45816c268480b7e82, type: 3}
+    isTextField: 0
+    copyText: 
+    screen: {fileID: 2800000, guid: f59c6086ac21e324289d4814fce25c71, type: 3}
+  - heading: Support Forum
+    text: Share your WIP or complete projects to inspire other developers. Leave your
+      thoughts about new features you want to see in Retro Look Pro.
+    linkText: Forum
+    url: https://forum.unity.com/threads/released-retro-look.583285/
+    extraImages: 0
+    foldout: 0
+    isButton: 1
+    isLink: 0
+    Headericon: {fileID: 2800000, guid: 3d16e0fd6b14e4d488a9246dd7c1418a, type: 3}
+    isTextField: 0
+    copyText: 
+    screen: {fileID: 0}
+  - heading: Online Documentation
+    text: Always up to date API
+    linkText: Here
+    url: https://github.com/LimitlessDevelopment/Retro-Look-Pro/wiki/Retro-Look-Pro-API
+    extraImages: 0
+    foldout: 0
+    isButton: 1
+    isLink: 0
+    Headericon: {fileID: 2800000, guid: e125b2d078df9d9458cbea120565950c, type: 3}
+    isTextField: 0
+    copyText: 
+    screen: {fileID: 0}
+  - heading: Contact
+    text: 'If you have any questions or want to report a bug. '
+    linkText: Contact via email
+    url: limitlessunitydevelopment@gmail.com
+    extraImages: 0
+    foldout: 0
+    isButton: 0
+    isLink: 0
+    Headericon: {fileID: 2800000, guid: 9eb1f23c615e96f4090d08269eb428f6, type: 3}
+    isTextField: 1
+    copyText: limitlessunitydevelopment@gmail.com
+    screen: {fileID: 0}
+  - heading: Assets
+    text: Check out my other cool assets. [Website may be in development]
+    linkText: Limitless Assets
+    url: https://limitless-development.xyz
+    extraImages: 0
+    foldout: 0
+    isButton: 0
+    isLink: 1
+    Headericon: {fileID: 2800000, guid: 705d3208542f146fd84bd5a70c6f6f61, type: 3}
+    isTextField: 0
+    copyText: limitlessunitydevelopment@gmail.com
+    screen: {fileID: 0}
+  loadedLayout: 0
