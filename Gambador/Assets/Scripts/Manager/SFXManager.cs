@@ -41,7 +41,6 @@ public static class SFXManager
     {
         var rand = Random.Range(1000, 3999);
         var floorRand = (int) Mathf.Floor(rand / 1000);
-        Debug.Log(floorRand);
         switch (floorRand) {
             case 1 :
                 audioSource.PlayOneShot(Slash1);

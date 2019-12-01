@@ -11,6 +11,7 @@ public class Enemy : MonoBehaviour
 
     void Start()
     {
+        canAttack = false;
         enemyManager = GameManager.singleton.EnemyManager;
         initialPosition = gameObject.transform.position;
     }
@@ -19,6 +20,7 @@ public class Enemy : MonoBehaviour
     {
        
         canAttack = false;
+       
     }
     public void setPositionInitialPOsition()
     {
