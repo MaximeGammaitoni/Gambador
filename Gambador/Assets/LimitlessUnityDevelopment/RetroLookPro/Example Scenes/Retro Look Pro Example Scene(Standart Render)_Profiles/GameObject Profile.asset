@@ -45,7 +45,7 @@ MonoBehaviour:
     overrideState: 1
     value: 1
   speed:
-    overrideState: 0
+    overrideState: 1
     value: 1
   amount:
     overrideState: 0
@@ -90,7 +90,7 @@ MonoBehaviour:
   bleedModeIndex: 0
   bleedAmount:
     overrideState: 1
-    value: 0.6
+    value: 0.1
   bleedLength:
     overrideState: 0
     value: 0

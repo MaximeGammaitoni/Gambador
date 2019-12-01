@@ -42,6 +42,10 @@ public class EnemyActive : MonoBehaviour
                 if (child.tag == "Enemy")
                 {
                     child.transform.GetComponent<Enemy>().canAttack = true;
+                    if (child.GetComponent<BulletAssaultLauncher>() != null)
+                    {
+                        child.GetComponent<BulletAssaultLauncher>().rafaleLaunched = false;
+                    }
                 }
             }
         }
@@ -58,6 +62,7 @@ public class EnemyActive : MonoBehaviour
                     child.transform.GetComponent<Enemy>().canAttack = false;
                 }
             }
+                
         }
     }
 
@@ -76,6 +81,10 @@ public class EnemyActive : MonoBehaviour
                 }
 
             }
+        }
+        foreach (Bullet bullet in GameObject.FindObjectsOfType<Bullet>())
+        {
+            Destroy(bullet.transform.gameObject);
         }
     }
 

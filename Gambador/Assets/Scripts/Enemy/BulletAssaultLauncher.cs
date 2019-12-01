@@ -16,7 +16,7 @@ public class BulletAssaultLauncher : MonoBehaviour
     private float delayTimer = 0;
     public bool ShootIstant;
     public int RafaleLength;
-    private bool rafaleLaunched = false;
+    [HideInInspector] public bool rafaleLaunched = false;
     void Start()
     {
         enemy = this.GetComponent<Enemy>();
@@ -33,6 +33,8 @@ public class BulletAssaultLauncher : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (enemy.canAttack && enemy.name == "t3")
+            Debug.Log(rafaleLaunched);
         if (enemy.canAttack && !rafaleLaunched)
         {
             delayTimer += Time.deltaTime * Config.TimeScale;
