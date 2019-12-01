@@ -34,7 +34,6 @@ public class EnemyManager
                 enemy.GetComponent<LookAtPlayer>().canLookAt = false;
             var playerPos = GameObject.Find("Player").transform.position;
             var distance = new Vector3(playerPos.x, enemy.gameObject.transform.position.y, playerPos.z) - enemy.gameObject.transform.position;
-            Debug.Log(distance);
             Vector3 direction = -distance.normalized * 2.5f;
             var origin = enemy.gameObject.transform.position;
             var destination = origin + direction;
