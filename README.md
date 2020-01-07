@@ -2,10 +2,10 @@
 
 In this game you're a ninja of the future. 
 
-You can't walk but you can Teleport.
-You just need click to move.
-To leave the game press ECHAP button. 
-Enjoy the game and the music. 
+You can't walk but you can Teleport.  
+You just need click to move.  
+To leave the game press ECHAP button.  
+Enjoy the game and the music.  
 
 # Contrubutor
 - Code and GameDesign : John Touba (http://jo541.github.io/) and Maxime Gammaitoni (https://github.com/MaximeGammaitoni)
