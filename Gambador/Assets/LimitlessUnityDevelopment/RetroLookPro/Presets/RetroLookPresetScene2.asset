@@ -1,0 +1,236 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a37825eaefb592945865a10957d67051, type: 3}
+  m_Name: RetroLookPresetScene2
+  m_EditorClassIdentifier: 
+  currPreset:
+    _BottomNoiseTexture: {fileID: 0}
+    useBottomNoise: 0
+    bottomHeight: 0.5
+    bottomIntensity: 1
+    useBottomStretch: 0
+    _bottomNoiseMat: {fileID: 0}
+    resolutionMode: 1
+    resolutionModeIndex: 1
+    resolution: {x: 768, y: 663}
+    pixelSize: 1
+    dither: 0.56
+    opacity: 0.347
+    colorPresetIndex: 0
+    f_show_colorPalette: 0
+    enableColorPalette: 1
+    _enableTVmode: 1
+    _VHS_Material: {fileID: 0}
+    _VHSNoise: {fileID: 2800000, guid: c171d861cb5bf75408826b8f346946bb, type: 3}
+    _textureIntensity: 2.81
+    _VerticalOffsetFrequency: 0
+    _verticalOffset: 0
+    _offsetColor: 0.004
+    _OffsetDistortion: 3500
+    _scan: 1
+    _adjustLines: 4
+    _scanLinesColor: {r: 0, g: 0, b: 0, a: 0}
+    _TV_Material: {fileID: 0}
+    _hardScan: -15.4
+    _resolution: 1
+    maskDark: 1.05
+    maskLight: 1.38
+    warp: {x: 0, y: 0, z: 0, w: 0}
+    sh_first: {fileID: 0}
+    sh_second: {fileID: 0}
+    sh_third: {fileID: 0}
+    sh_fourth: {fileID: 0}
+    sh_clear: {fileID: 0}
+    sh_tape: {fileID: 0}
+    m_1: {fileID: 0}
+    m_2: {fileID: 0}
+    m_3: {fileID: 0}
+    m_4: {fileID: 0}
+    m_clear: {fileID: 0}
+    m_tape_noise: {fileID: 0}
+    enableCustomTexture: 0
+    bypassTex: {fileID: 0}
+    spriteTex: {fileID: 0}
+    f_show_Bleed: 1
+    f_show_Fisheye: 0
+    f_show_Vignette: 0
+    f_show_Noise: 0
+    f_show_Jitter: 0
+    f_show_Signal: 0
+    f_show_Artefacts: 0
+    f_show_Extra: 0
+    f_show_Bypass: 0
+    f_show_TV_mode: 0
+    f_show_Old_TV_mode: 0
+    f_show_Bottom_Noise_mode: 0
+    f_show_Glitch_Effects: 0
+    o_Enable_negative_props: 1
+    o_Enable_Old_TV_effects: 0
+    o_Luminosity: 0.08
+    o_Negative: 0.96
+    o_Vignette: 1
+    o_FPS: 0
+    o_contrast: 1.7
+    o_burn: 0.03
+    o_sceneCut: 0
+    o_Fade: 1
+    o_negative_mat: {fileID: 0}
+    o_oldfilm_mat: {fileID: 0}
+    b_Mode: 3
+    b_Bleed: 1
+    b_LinesMode: 1
+    b_ScreenLinesNum: 240
+    b_BleedAmount: 4.8
+    b_BleedDebug: 0
+    b_BleedLength: 24
+    b_BleedCurveEditMode: 0
+    b_BleedCurveSync: 0
+    b_BleedCurve1:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: -1
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 0
+        inSlope: -1
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    b_BleedCurve2:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0.5
+        inSlope: 0
+        outSlope: -0.5
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 0
+        inSlope: -0.5
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    b_BleedCurve3:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0.5
+        inSlope: 0
+        outSlope: -0.5
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 0
+        inSlope: -0.5
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    g_enable_glitch: 0
+    g_strength: 0.82
+    g_fade: 1
+    g_speed: 1
+    g_GlitchMat1: {fileID: 0}
+    g_enable_glitch2: 0
+    g_2Intensity: 1
+    g_2Res: 1
+    g_2speed: 0
+    g_GlitchMat2: {fileID: 0}
+    f_Fisheye: 0
+    f_FisheyeBend: 50
+    f_FisheyeType: 0
+    f_FisheyeSize: 1.5
+    f_CutoffX: 24.2
+    f_CutoffY: 30.2
+    f_FadeX: 12.1
+    f_FadeY: 10.1
+    v_Vignette: 0
+    v_VignetteAmount: 1
+    v_VignetteSpeed: 1
+    n_enableNoise: 0
+    n_NoiseMode: 0
+    n_NoiseLinesAmountY: 240
+    n_NoiseSignalProcessing: 1
+    f_Granularity: 0
+    f_GranularityAmount: 0.09
+    f_SignalNoise: 0
+    f_SignalNoiseAmount: 0.2
+    f_SignalNoisePower: 0.68
+    f_TapeNoise: 0
+    f_TapeNoiseTH: 0.68
+    f_TapeNoiseAmount: 1
+    f_TapeNoiseSpeed: 1
+    f_LineNoise: 0
+    f_LineNoiseAmount: 1
+    f_LineNoiseSpeed: 3
+    j_enableJitter: 0
+    j_ScanLines: 0
+    j_ScanLinesWidth: 15
+    j_LinesFloat: 0
+    j_LinesSpeed: 1
+    j_Stretch: 0
+    j_JitterHorizontal: 0
+    j_JitterHorizAmount: 0.2
+    j_JitterVertical: 0
+    j_VertAmount: 1
+    j_VertSpeed: 1
+    j_TwitchHorizontal: 0
+    j_TwitchHorizFreq: 1
+    j_TwitchVertical: 0
+    j_TwitchVertFreq: 1
+    p_PictureCorrection: 0
+    p_PictureCorr1: 0.04
+    p_PictureCorr2: 0.012
+    p_PictureCorr3: -0.004
+    p_PictureShift1: 1.03
+    p_PictureShift2: 0.9
+    p_PictureShift3: 1.1
+    p_Gamma: 2
+    a_Artefacts: 0
+    a_ArtefactsMode: 0
+    a_ArtefactsThreshold: 0
+    a_ArtefactsAmount: 3
+    a_ArtefactsFadeAmount: 0.605
+    a_ArtefactsColor: {r: 1, g: 0, b: 0.9761739, a: 1}
+    a_ArtefactsDebug: 0
+    independentTimeOn: 0

@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 8ba5113e7208c4316acb1028a08587a2
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - shader1: {fileID: 4800000, guid: e5b137a48bf2c4c668927fd89b6ccbcd, type: 3}
+  - shader2: {fileID: 4800000, guid: e2075d3cd3deb45c78fdc81aab250ef7, type: 3}
+  - shader3: {fileID: 4800000, guid: de4e63e4455b14b8e8c57542f8089707, type: 3}
+  - shader4: {fileID: 4800000, guid: 65c19848f188f4192a05ff1eece78fee, type: 3}
+  - shader_clear: {fileID: 4800000, guid: 3c6a64923374747f7b15711533b5971a, type: 3}
+  - shader_tape: {fileID: 4800000, guid: caea6b3daf52a4416949b7b9c0146d77, type: 3}
+  - movieTex: {instanceID: 0}
+  - spriteTex: {instanceID: 0}
+  executionOrder: 0
+  icon: {fileID: 2800000, guid: 1cf8eb7ba615849e98f3c04befe63b47, type: 3}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
