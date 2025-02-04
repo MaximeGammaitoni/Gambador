@@ -1,4 +1,4 @@
-# Welcome to the Retro Chase game (Code name Gambador).
+# Welcome to the Retro Chase game.
 
 In this game you're a ninja of the future. 
 
